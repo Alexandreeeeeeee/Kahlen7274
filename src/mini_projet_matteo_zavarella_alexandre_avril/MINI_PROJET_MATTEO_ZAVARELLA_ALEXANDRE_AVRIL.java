@@ -17,7 +17,9 @@ public class MINI_PROJET_MATTEO_ZAVARELLA_ALEXANDRE_AVRIL {
         // TODO code application logic here
     }
     int couille;
+
     String pute;
     int bb;
+    int g;
     
 }

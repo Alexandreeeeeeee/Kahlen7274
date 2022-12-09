@@ -20,6 +20,5 @@ public class MINI_PROJET_MATTEO_ZAVARELLA_ALEXANDRE_AVRIL {
 
     String pute;
     int bb;
-    int g;
-    
+        
 }

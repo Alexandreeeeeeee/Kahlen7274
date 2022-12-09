@@ -18,5 +18,6 @@ public class MINI_PROJET_MATTEO_ZAVARELLA_ALEXANDRE_AVRIL {
     }
     int couille;
     String pute;
+    int bb;
     
 }

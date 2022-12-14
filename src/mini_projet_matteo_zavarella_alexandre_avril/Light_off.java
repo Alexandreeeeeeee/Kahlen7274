@@ -32,32 +32,34 @@ public class Light_off extends JFrame implements ActionListener {
             }
         }
     }
- 
-public void actionPerformed(ActionEvent e) { 
+
+    public void actionPerformed(ActionEvent e) {
         // actionEvent qui sert à récupérer l'info du bouton.
         // ici si celui ci a été cliqué, on change son état.
+        
         JButton action = (JButton) e.getSource();
-            for (int i = 0 ; i<5 ; i ++){
-                for (int j = 0; j<5; j ++){
-                    if (action == lights[i][j]){
-                        if (lights[i][j].getText() == "0"){
-                            lights[i][j].setText("1");
-                        }
-                        else {
-                            lights[i][j].setText("0");
-                        }
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                // i : ligne et j : colonne
+                if (action == lights[i][j]) {
+                    if (lights[i][j].getText() == "0") {
+                        lights[i][j].setText("1");
+                    } else {
+                        lights[i][j].setText("0");
                     }
                 }
+            }
         }
-            
+
         // LISTE DE CONDITIONS GERANTS LE STATUT DU BOUTON QU'ON CLIQUE // 
-                if (action == lights[0][0]) {
+        
+        if (action == lights[0][0]) {
             if ("0".equals(lights[0][0].getText())) {
                 lights[0][0].setText("1");
             } else {
                 lights[0][0].setText("0");
             }
-            // edgeToggle(0,0,action);
+            //edgeToggle(0,0,action);
             forward(0, 0);
             down(0, 0);
 
@@ -71,6 +73,7 @@ public void actionPerformed(ActionEvent e) {
             backward(0, 1);
             forward(0, 1);
             down(0, 1);
+
         } else if (action == lights[0][2]) {
             if (lights[0][2].getText() == "0") {
                 lights[0][2].setText("1");
@@ -79,31 +82,28 @@ public void actionPerformed(ActionEvent e) {
             }
             // edgeToggle(0,2,action);
             backward(0, 2);
+            forward(0, 2);
             down(0, 2);
-        } 
-        else if (action == lights[0][3]) {
+        } else if (action == lights[0][3]) {
             if (lights[0][3].getText() == "0") {
                 lights[0][3].setText("1");
             } else {
                 lights[0][3].setText("0");
             }
 
-            up(0, 3);
             backward(0, 3);
             forward(0, 3);
-        }
-        else if (action == lights[0][4]) {
+            down(0, 3);
+        } else if (action == lights[0][4]) {
             if (lights[0][4].getText() == "0") {
                 lights[0][4].setText("1");
             } else {
                 lights[0][4].setText("0");
             }
 
-            up(0, 4);
             backward(0, 4);
-            forward(0, 4);
-        }
-        else if (action == lights[1][0]) {
+            down(0, 4);
+        } else if (action == lights[1][0]) {
             if (lights[1][0].getText() == "0") {
                 lights[1][0].setText("1");
             } else {
@@ -113,6 +113,7 @@ public void actionPerformed(ActionEvent e) {
             up(1, 0);
             down(1, 0);
             forward(1, 0);
+
         } else if (action == lights[1][1]) {
             if (lights[1][1].getText() == "0") {
                 lights[1][1].setText("1");
@@ -124,6 +125,7 @@ public void actionPerformed(ActionEvent e) {
             down(1, 1);
             backward(1, 1);
             forward(1, 1);
+
         } else if (action == lights[1][2]) {
             if (lights[1][2].getText() == "0") {
                 lights[1][2].setText("1");
@@ -134,6 +136,30 @@ public void actionPerformed(ActionEvent e) {
             up(1, 2);
             down(1, 2);
             backward(1, 2);
+            forward(1, 2);
+
+        } else if (action == lights[1][3]) {
+            if (lights[1][3].getText() == "0") {
+                lights[1][3].setText("1");
+            } else {
+                lights[1][3].setText("0");
+            }
+
+            up(1, 3);
+            down(1, 3);
+            backward(1, 3);
+            forward(1, 3);
+        } else if (action == lights[1][4]) {
+            if (lights[1][4].getText() == "0") {
+                lights[1][4].setText("1");
+            } else {
+                lights[1][4].setText("0");
+            }
+
+            up(1, 4);
+            down(1, 4);
+            backward(1, 4);
+
         } else if (action == lights[2][0]) {
             if (lights[2][0].getText() == "0") {
                 lights[2][0].setText("1");
@@ -142,6 +168,7 @@ public void actionPerformed(ActionEvent e) {
             }
             // edgeToggle(2,0,action);
             up(2, 0);
+            down(2, 0);
             forward(2, 0);
 
         } else if (action == lights[2][1]) {
@@ -152,8 +179,10 @@ public void actionPerformed(ActionEvent e) {
             }
 
             up(2, 1);
+            down(2, 1);
             backward(2, 1);
             forward(2, 1);
+
         } else if (action == lights[2][2]) {
             if (lights[2][2].getText() == "0") {
                 lights[2][2].setText("1");
@@ -162,8 +191,134 @@ public void actionPerformed(ActionEvent e) {
             }
             // edgeToggle(2,2,action);
             up(2, 2);
+            down(2, 2);
             backward(2, 2);
-        }    
+            forward(2, 2);
+        } else if (action == lights[2][3]) {
+            if (lights[2][3].getText() == "0") {
+                lights[2][3].setText("1");
+            } else {
+                lights[2][3].setText("0");
+            }
+            // edgeToggle(2,2,action);
+            up(2, 3);
+            down(2, 3);
+            backward(2, 3);
+            forward(2, 3);
+        } else if (action == lights[2][4]) {
+            if (lights[2][4].getText() == "0") {
+                lights[2][4].setText("1");
+            } else {
+                lights[2][4].setText("0");
+            }
+            // edgeToggle(2,2,action);
+            up(2, 4);
+            down(2, 4);
+            backward(2, 4);
+        } else if (action == lights[3][0]) {
+            if (lights[3][0].getText() == "0") {
+                lights[3][0].setText("1");
+            } else {
+                lights[3][0].setText("0");
+            }
+            // edgeToggle(2,2,action);
+            up(3, 0);
+            down(3, 0);
+            forward(3, 0);
+        } else if (action == lights[3][1]) {
+            if (lights[3][1].getText() == "0") {
+                lights[3][1].setText("1");
+            } else {
+                lights[3][1].setText("0");
+            }
+            // edgeToggle(2,2,action);
+            up(3, 1);
+            down(3, 1);
+            backward(3, 1);
+            forward(3, 1);
+        } else if (action == lights[3][2]) {
+            if (lights[3][2].getText() == "0") {
+                lights[3][2].setText("1");
+            } else {
+                lights[3][2].setText("0");
+            }
+            // edgeToggle(2,2,action);
+            up(3, 2);
+            down(3, 2);
+            backward(3, 2);
+            forward(3, 2);
+        } else if (action == lights[3][3]) {
+            if (lights[3][3].getText() == "0") {
+                lights[3][3].setText("1");
+            } else {
+                lights[3][3].setText("0");
+            }
+            // edgeToggle(2,2,action);
+            up(3, 3);
+            down(3, 3);
+            backward(3, 3);
+            forward(3, 3);
+        } else if (action == lights[3][4]) {
+            if (lights[3][4].getText() == "0") {
+                lights[3][4].setText("1");
+            } else {
+                lights[3][4].setText("0");
+            }
+            // edgeToggle(2,2,action);
+            up(3, 4);
+            down(3, 4);
+            backward(3, 4);
+        } else if (action == lights[4][0]) {
+            if (lights[4][0].getText() == "0") {
+                lights[4][0].setText("1");
+            } else {
+                lights[4][0].setText("0");
+            }
+            // edgeToggle(2,2,action);
+            up(4, 0);
+            forward(4, 0);
+        } else if (action == lights[4][1]) {
+            if (lights[4][1].getText() == "0") {
+                lights[4][1].setText("1");
+            } else {
+                lights[4][1].setText("0");
+            }
+            // edgeToggle(2,2,action);
+            up(4, 1);
+            forward(4, 1);
+            backward(4, 1);
+        } else if (action == lights[4][2]) {
+            if (lights[4][2].getText() == "0") {
+                lights[4][2].setText("1");
+            } else {
+                lights[4][2].setText("0");
+            }
+            // edgeToggle(2,2,action);
+            up(4, 2);
+            forward(4, 2);
+            backward(4, 2);
+        } else if (action == lights[4][3]) {
+            if (lights[4][3].getText() == "0") {
+                lights[4][3].setText("1");
+            } else {
+                lights[4][3].setText("0");
+            }
+            // edgeToggle(2,2,action);
+            up(4, 3);
+            forward(4, 3);
+            backward(4, 3);
+        } else if (action == lights[4][4]) {
+            if (lights[4][4].getText() == "0") {
+                lights[4][4].setText("1");
+            } else {
+                lights[4][4].setText("0");
+            }
+            // edgeToggle(2,2,action);
+            up(4, 4);
+
+            backward(4, 4);
+        }
+
     }
 
     // methode permettant de verifier les statut des boutons adjacent

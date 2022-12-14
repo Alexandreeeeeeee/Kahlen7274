@@ -2,10 +2,12 @@ package mini_projet_matteo_zavarella_alexandre_avril;
 
 import javax.swing.*;
 import java.awt.*;
+
 import javax.swing.JFrame;
 import java.util.Scanner;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.JLabel;
 
 public class Light_off extends JFrame implements ActionListener {
 

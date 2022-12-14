@@ -49,7 +49,7 @@ public class Light_off extends JFrame implements ActionListener {
         if (action == lights[0][0]) {
             if ("0".equals(lights[0][0].getText())) {
                 lights[0][0].setText("1");
-                
+
             } else {
                 lights[0][0].setText("0");
             }
@@ -356,4 +356,15 @@ public class Light_off extends JFrame implements ActionListener {
         }
     }
 
+    public void ChangementCouleur() {
+        for (int i = 0; i < 5; i++) { // remplissage de la grille avec des boutons.
+            for (int j = 0; j < 5; j++) {
+                if (lights[i][j].getText() == "0") {
+                    lights[i][j].setBackground(Color.red);
+                } else {
+                    lights[i][j].setBackground(Color.cyan);
+                }
+            }
+        }
+    }
 }

@@ -32,11 +32,26 @@ public class Light_off extends JFrame implements ActionListener {
             }
         }
     }
-
-    public void actionPerformed(ActionEvent e) { // actionEvent qui sert à récupérer l'info du bouton.
-        // ici si celui ci a été cliqué.
+ 
+public void actionPerformed(ActionEvent e) { 
+        // actionEvent qui sert à récupérer l'info du bouton.
+        // ici si celui ci a été cliqué, on change son état.
         JButton action = (JButton) e.getSource();
-        if (action == lights[0][0]) {
+            for (int i = 0 ; i<5 ; i ++){
+                for (int j = 0; j<5; j ++){
+                    if (action == lights[i][j]){
+                        if (lights[i][j].getText() == "0"){
+                            lights[i][j].setText("1");
+                        }
+                        else {
+                            lights[i][j].setText("0");
+                        }
+                    }
+                }
+        }
+            
+        // LISTE DE CONDITIONS GERANTS LE STATUT DU BOUTON QU'ON CLIQUE // 
+                if (action == lights[0][0]) {
             if ("0".equals(lights[0][0].getText())) {
                 lights[0][0].setText("1");
             } else {
@@ -65,7 +80,30 @@ public class Light_off extends JFrame implements ActionListener {
             // edgeToggle(0,2,action);
             backward(0, 2);
             down(0, 2);
-        } else if (action == lights[1][0]) {
+        } 
+        else if (action == lights[0][3]) {
+            if (lights[0][3].getText() == "0") {
+                lights[0][3].setText("1");
+            } else {
+                lights[0][3].setText("0");
+            }
+
+            up(0, 3);
+            backward(0, 3);
+            forward(0, 3);
+        }
+        else if (action == lights[0][4]) {
+            if (lights[0][4].getText() == "0") {
+                lights[0][4].setText("1");
+            } else {
+                lights[0][4].setText("0");
+            }
+
+            up(0, 4);
+            backward(0, 4);
+            forward(0, 4);
+        }
+        else if (action == lights[1][0]) {
             if (lights[1][0].getText() == "0") {
                 lights[1][0].setText("1");
             } else {
@@ -125,11 +163,11 @@ public class Light_off extends JFrame implements ActionListener {
             // edgeToggle(2,2,action);
             up(2, 2);
             backward(2, 2);
-        }
+        }    
     }
 
     // methode permettant de verifier les statut des boutons adjacent
-    public void forward(int a, int b) {
+    public void forward(int a, int b) { // DEVANT 
         if ("0".equals(lights[a][b + 1].getText())) {
             lights[a][b + 1].setText("1");
         } else {
@@ -137,7 +175,7 @@ public class Light_off extends JFrame implements ActionListener {
         }
     }
 
-    public void backward(int a, int b) {
+    public void backward(int a, int b) { // DERRIERE
         if ("0".equals(lights[a][b - 1].getText())) {
             lights[a][b - 1].setText("1");
         } else {
@@ -145,7 +183,7 @@ public class Light_off extends JFrame implements ActionListener {
         }
     }
 
-    public void up(int a, int b) {
+    public void up(int a, int b) { // EN HAUT 
         if ("0".equals(lights[a - 1][b].getText())) {
             lights[a - 1][b].setText("1");
         } else {
@@ -153,7 +191,7 @@ public class Light_off extends JFrame implements ActionListener {
         }
     }
 
-    public void down(int a, int b) {
+    public void down(int a, int b) { // EN BAS
         if ("0".equals(lights[a + 1][b].getText())) {
             lights[a + 1][b].setText("1");
         } else {

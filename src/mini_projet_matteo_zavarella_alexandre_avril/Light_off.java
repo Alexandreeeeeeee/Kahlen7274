@@ -31,9 +31,9 @@ public class Light_off extends JFrame implements ActionListener {
                 add(lights[i][j]);
 
                 if (lights[i][j].getText() == "0") {
-                    lights[i][j].setBackground(Color.red);
+                    lights[i][j].setBackground(Color.black);
                 } else {
-                    lights[i][j].setBackground(Color.cyan);
+                    lights[i][j].setBackground(Color.yellow);
                 }
             }
         }
@@ -49,19 +49,22 @@ public class Light_off extends JFrame implements ActionListener {
         if (action == lights[0][0]) {
             if ("0".equals(lights[0][0].getText())) {
                 lights[0][0].setText("1");
-
+                lights[0][0].setBackground(Color.yellow);
             } else {
                 lights[0][0].setText("0");
+                lights[0][0].setBackground(Color.black);
             }
             //edgeToggle(0,0,action);
             forward(0, 0);
             down(0, 0);
-
+            
         } else if (action == lights[0][1]) {
             if (lights[0][1].getText() == "0") {
                 lights[0][1].setText("1");
+                lights[0][1].setBackground(Color.yellow);
             } else {
                 lights[0][1].setText("0");
+                lights[0][1].setBackground(Color.black);
             }
 
             backward(0, 1);
@@ -71,8 +74,10 @@ public class Light_off extends JFrame implements ActionListener {
         } else if (action == lights[0][2]) {
             if (lights[0][2].getText() == "0") {
                 lights[0][2].setText("1");
+                lights[0][2].setBackground(Color.yellow);
             } else {
                 lights[0][2].setText("0");
+                lights[0][2].setBackground(Color.black);
             }
             // edgeToggle(0,2,action);
             backward(0, 2);
@@ -81,8 +86,10 @@ public class Light_off extends JFrame implements ActionListener {
         } else if (action == lights[0][3]) {
             if (lights[0][3].getText() == "0") {
                 lights[0][3].setText("1");
+                lights[0][3].setBackground(Color.yellow);
             } else {
                 lights[0][3].setText("0");
+                lights[0][3].setBackground(Color.black);
             }
 
             backward(0, 3);
@@ -91,8 +98,11 @@ public class Light_off extends JFrame implements ActionListener {
         } else if (action == lights[0][4]) {
             if (lights[0][4].getText() == "0") {
                 lights[0][4].setText("1");
+                                lights[0][4].setBackground(Color.yellow);
+
             } else {
                 lights[0][4].setText("0");
+                lights[0][4].setBackground(Color.black);
             }
 
             backward(0, 4);
@@ -100,8 +110,12 @@ public class Light_off extends JFrame implements ActionListener {
         } else if (action == lights[1][0]) {
             if (lights[1][0].getText() == "0") {
                 lights[1][0].setText("1");
+                                lights[1][0].setBackground(Color.yellow);
+
             } else {
                 lights[1][0].setText("0");
+                                                lights[1][0].setBackground(Color.black);
+
             }
 
             up(1, 0);
@@ -111,8 +125,10 @@ public class Light_off extends JFrame implements ActionListener {
         } else if (action == lights[1][1]) {
             if (lights[1][1].getText() == "0") {
                 lights[1][1].setText("1");
+                lights[1][1].setBackground(Color.yellow);
             } else {
                 lights[1][1].setText("0");
+                lights[1][1].setBackground(Color.black);
             }
 
             up(1, 1);
@@ -123,8 +139,10 @@ public class Light_off extends JFrame implements ActionListener {
         } else if (action == lights[1][2]) {
             if (lights[1][2].getText() == "0") {
                 lights[1][2].setText("1");
+                lights[1][2].setBackground(Color.yellow);
             } else {
                 lights[1][2].setText("0");
+                lights[1][2].setBackground(Color.black);
             }
 
             up(1, 2);
@@ -135,8 +153,10 @@ public class Light_off extends JFrame implements ActionListener {
         } else if (action == lights[1][3]) {
             if (lights[1][3].getText() == "0") {
                 lights[1][3].setText("1");
+                lights[1][3].setBackground(Color.yellow);
             } else {
                 lights[1][3].setText("0");
+                lights[1][3].setBackground(Color.black);
             }
 
             up(1, 3);
@@ -146,8 +166,10 @@ public class Light_off extends JFrame implements ActionListener {
         } else if (action == lights[1][4]) {
             if (lights[1][4].getText() == "0") {
                 lights[1][4].setText("1");
+                lights[1][4].setBackground(Color.yellow);
             } else {
                 lights[1][4].setText("0");
+                lights[1][4].setBackground(Color.black);
             }
 
             up(1, 4);
@@ -157,8 +179,10 @@ public class Light_off extends JFrame implements ActionListener {
         } else if (action == lights[2][0]) {
             if (lights[2][0].getText() == "0") {
                 lights[2][0].setText("1");
+                lights[2][0].setBackground(Color.yellow);
             } else {
                 lights[2][0].setText("0");
+                lights[2][0].setBackground(Color.black);
             }
             // edgeToggle(2,0,action);
             up(2, 0);
@@ -168,8 +192,10 @@ public class Light_off extends JFrame implements ActionListener {
         } else if (action == lights[2][1]) {
             if (lights[2][1].getText() == "0") {
                 lights[2][1].setText("1");
+                lights[2][1].setBackground(Color.yellow);
             } else {
                 lights[2][1].setText("0");
+                lights[2][1].setBackground(Color.black);
             }
 
             up(2, 1);
@@ -180,8 +206,10 @@ public class Light_off extends JFrame implements ActionListener {
         } else if (action == lights[2][2]) {
             if (lights[2][2].getText() == "0") {
                 lights[2][2].setText("1");
+                lights[2][2].setBackground(Color.yellow);
             } else {
                 lights[2][2].setText("0");
+                lights[2][2].setBackground(Color.black);
             }
             // edgeToggle(2,2,action);
             up(2, 2);
@@ -191,8 +219,10 @@ public class Light_off extends JFrame implements ActionListener {
         } else if (action == lights[2][3]) {
             if (lights[2][3].getText() == "0") {
                 lights[2][3].setText("1");
+                lights[2][3].setBackground(Color.yellow);
             } else {
                 lights[2][3].setText("0");
+                lights[2][3].setBackground(Color.black);
             }
             // edgeToggle(2,2,action);
             up(2, 3);
@@ -202,8 +232,10 @@ public class Light_off extends JFrame implements ActionListener {
         } else if (action == lights[2][4]) {
             if (lights[2][4].getText() == "0") {
                 lights[2][4].setText("1");
+                lights[2][4].setBackground(Color.yellow);
             } else {
                 lights[2][4].setText("0");
+                lights[2][4].setBackground(Color.black);
             }
             // edgeToggle(2,2,action);
             up(2, 4);
@@ -212,8 +244,10 @@ public class Light_off extends JFrame implements ActionListener {
         } else if (action == lights[3][0]) {
             if (lights[3][0].getText() == "0") {
                 lights[3][0].setText("1");
+                lights[3][0].setBackground(Color.yellow);
             } else {
                 lights[3][0].setText("0");
+                lights[3][0].setBackground(Color.black);
             }
             // edgeToggle(2,2,action);
             up(3, 0);
@@ -222,8 +256,10 @@ public class Light_off extends JFrame implements ActionListener {
         } else if (action == lights[3][1]) {
             if (lights[3][1].getText() == "0") {
                 lights[3][1].setText("1");
+                lights[3][1].setBackground(Color.yellow);
             } else {
                 lights[3][1].setText("0");
+                lights[3][1].setBackground(Color.black);
             }
             // edgeToggle(2,2,action);
             up(3, 1);
@@ -233,8 +269,10 @@ public class Light_off extends JFrame implements ActionListener {
         } else if (action == lights[3][2]) {
             if (lights[3][2].getText() == "0") {
                 lights[3][2].setText("1");
+                lights[3][2].setBackground(Color.yellow);
             } else {
                 lights[3][2].setText("0");
+                lights[3][2].setBackground(Color.black);
             }
             // edgeToggle(2,2,action);
             up(3, 2);
@@ -244,8 +282,10 @@ public class Light_off extends JFrame implements ActionListener {
         } else if (action == lights[3][3]) {
             if (lights[3][3].getText() == "0") {
                 lights[3][3].setText("1");
+                lights[3][3].setBackground(Color.yellow);
             } else {
                 lights[3][3].setText("0");
+                lights[3][3].setBackground(Color.black);
             }
             // edgeToggle(2,2,action);
             up(3, 3);
@@ -255,8 +295,10 @@ public class Light_off extends JFrame implements ActionListener {
         } else if (action == lights[3][4]) {
             if (lights[3][4].getText() == "0") {
                 lights[3][4].setText("1");
+                lights[3][4].setBackground(Color.yellow);
             } else {
                 lights[3][4].setText("0");
+                lights[3][4].setBackground(Color.black);
             }
             // edgeToggle(2,2,action);
             up(3, 4);
@@ -265,8 +307,10 @@ public class Light_off extends JFrame implements ActionListener {
         } else if (action == lights[4][0]) {
             if (lights[4][0].getText() == "0") {
                 lights[4][0].setText("1");
+                lights[4][0].setBackground(Color.yellow);
             } else {
                 lights[4][0].setText("0");
+                lights[4][0].setBackground(Color.black);
             }
             // edgeToggle(2,2,action);
             up(4, 0);
@@ -274,8 +318,10 @@ public class Light_off extends JFrame implements ActionListener {
         } else if (action == lights[4][1]) {
             if (lights[4][1].getText() == "0") {
                 lights[4][1].setText("1");
+                lights[4][1].setBackground(Color.yellow);
             } else {
                 lights[4][1].setText("0");
+                lights[4][1].setBackground(Color.black);
             }
             // edgeToggle(2,2,action);
             up(4, 1);
@@ -284,8 +330,10 @@ public class Light_off extends JFrame implements ActionListener {
         } else if (action == lights[4][2]) {
             if (lights[4][2].getText() == "0") {
                 lights[4][2].setText("1");
+                lights[4][2].setBackground(Color.yellow);
             } else {
                 lights[4][2].setText("0");
+                lights[4][2].setBackground(Color.black);
             }
             // edgeToggle(2,2,action);
             up(4, 2);
@@ -294,8 +342,11 @@ public class Light_off extends JFrame implements ActionListener {
         } else if (action == lights[4][3]) {
             if (lights[4][3].getText() == "0") {
                 lights[4][3].setText("1");
+                lights[4][3].setBackground(Color.yellow);
             } else {
                 lights[4][3].setText("0");
+                lights[4][3].setBackground(Color.black);
+
             }
             // edgeToggle(2,2,action);
             up(4, 3);
@@ -304,8 +355,11 @@ public class Light_off extends JFrame implements ActionListener {
         } else if (action == lights[4][4]) {
             if (lights[4][4].getText() == "0") {
                 lights[4][4].setText("1");
+                lights[4][4].setBackground(Color.yellow);
+
             } else {
                 lights[4][4].setText("0");
+                lights[4][4].setBackground(Color.black);
             }
             // edgeToggle(2,2,action);
             up(4, 4);
@@ -319,50 +373,50 @@ public class Light_off extends JFrame implements ActionListener {
     public void forward(int a, int b) { // DEVANT 
         if ("0".equals(lights[a][b + 1].getText())) {
             lights[a][b + 1].setText("1");
-            //lights[a][b + 1].setBackground(Color.cyan);
+            lights[a][b + 1].setBackground(Color.yellow);
         } else {
             lights[a][b + 1].setText("0");
-            //lights[a][b + 1].setBackground(Color.red);
+            lights[a][b + 1].setBackground(Color.black);
         }
     }
 
     public void backward(int a, int b) { // DERRIERE
         if ("0".equals(lights[a][b - 1].getText())) {
             lights[a][b - 1].setText("1");
-            //lights[a][b - 1].setBackground(Color.cyan);
+            lights[a][b - 1].setBackground(Color.yellow);
         } else {
             lights[a][b - 1].setText("0");
-            //lights[a][b - 1].setBackground(Color.red);
+            lights[a][b - 1].setBackground(Color.black);
         }
     }
 
     public void up(int a, int b) { // EN HAUT 
         if ("0".equals(lights[a - 1][b].getText())) {
             lights[a - 1][b].setText("1");
-            //lights[a - 1][b].setBackground(Color.cyan);
+            lights[a - 1][b].setBackground(Color.yellow);
         } else {
             lights[a - 1][b].setText("0");
-            //lights[a - 1][b].setBackground(Color.red);
+            lights[a - 1][b].setBackground(Color.black);
         }
     }
 
     public void down(int a, int b) { // EN BAS
         if ("0".equals(lights[a + 1][b].getText())) {
             lights[a + 1][b].setText("1");
-            //lights[a + 1][b].setBackground(Color.cyan);
+            lights[a + 1][b].setBackground(Color.yellow);
         } else {
             lights[a + 1][b].setText("0");
-            //lights[a + 1][b].setBackground(Color.red);
+            lights[a + 1][b].setBackground(Color.black);
         }
     }
 
     public void ChangementCouleur() {
-        for (int i = 0; i < 5; i++) { // remplissage de la grille avec des boutons.
+        for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
                 if (lights[i][j].getText() == "0") {
-                    lights[i][j].setBackground(Color.red);
+                    lights[i][j].setBackground(Color.black);
                 } else {
-                    lights[i][j].setBackground(Color.cyan);
+                    lights[i][j].setBackground(Color.yellow);
                 }
             }
         }

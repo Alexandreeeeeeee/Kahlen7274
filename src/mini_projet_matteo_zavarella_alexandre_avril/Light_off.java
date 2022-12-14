@@ -30,12 +30,14 @@ public class Light_off extends JFrame implements ActionListener {
                 lights[i][j] = new JButton();
                 lights[i][j].addActionListener(this);
                 add(lights[i][j]);
+                
+                // on fixex aléatoirement l'état des boutons.
                 if (Math.random() > 0.5) {
                     lights[i][j].setText("1");
                 } else {
                     lights[i][j].setText("0");
                 }
-                if (lights[i][j].getText() == "0") {
+                if (lights[i][j].getText() == "0") { 
                     lights[i][j].setBackground(Color.black);
                 } else {
                     lights[i][j].setBackground(Color.yellow);
@@ -45,6 +47,8 @@ public class Light_off extends JFrame implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent e) {
+        // on aurait pu faire avec toggle qui permet de basculer des état, ca aurait été plus lisible en terme 
+        // de codage.
         // actionEvent qui sert à récupérer l'info du bouton.
         // ici si celui ci a été cliqué, on change son état.
 

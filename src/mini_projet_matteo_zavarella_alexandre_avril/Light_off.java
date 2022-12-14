@@ -54,10 +54,9 @@ public class Light_off extends JFrame implements ActionListener {
                 lights[0][0].setText("0");
                 lights[0][0].setBackground(Color.black);
             }
-            //edgeToggle(0,0,action);
             forward(0, 0);
             down(0, 0);
-            
+
         } else if (action == lights[0][1]) {
             if (lights[0][1].getText() == "0") {
                 lights[0][1].setText("1");
@@ -79,7 +78,6 @@ public class Light_off extends JFrame implements ActionListener {
                 lights[0][2].setText("0");
                 lights[0][2].setBackground(Color.black);
             }
-            // edgeToggle(0,2,action);
             backward(0, 2);
             forward(0, 2);
             down(0, 2);
@@ -98,7 +96,7 @@ public class Light_off extends JFrame implements ActionListener {
         } else if (action == lights[0][4]) {
             if (lights[0][4].getText() == "0") {
                 lights[0][4].setText("1");
-                                lights[0][4].setBackground(Color.yellow);
+                lights[0][4].setBackground(Color.yellow);
 
             } else {
                 lights[0][4].setText("0");
@@ -110,11 +108,11 @@ public class Light_off extends JFrame implements ActionListener {
         } else if (action == lights[1][0]) {
             if (lights[1][0].getText() == "0") {
                 lights[1][0].setText("1");
-                                lights[1][0].setBackground(Color.yellow);
+                lights[1][0].setBackground(Color.yellow);
 
             } else {
                 lights[1][0].setText("0");
-                                                lights[1][0].setBackground(Color.black);
+                lights[1][0].setBackground(Color.black);
 
             }
 
@@ -184,7 +182,6 @@ public class Light_off extends JFrame implements ActionListener {
                 lights[2][0].setText("0");
                 lights[2][0].setBackground(Color.black);
             }
-            // edgeToggle(2,0,action);
             up(2, 0);
             down(2, 0);
             forward(2, 0);
@@ -211,7 +208,6 @@ public class Light_off extends JFrame implements ActionListener {
                 lights[2][2].setText("0");
                 lights[2][2].setBackground(Color.black);
             }
-            // edgeToggle(2,2,action);
             up(2, 2);
             down(2, 2);
             backward(2, 2);
@@ -224,7 +220,6 @@ public class Light_off extends JFrame implements ActionListener {
                 lights[2][3].setText("0");
                 lights[2][3].setBackground(Color.black);
             }
-            // edgeToggle(2,2,action);
             up(2, 3);
             down(2, 3);
             backward(2, 3);
@@ -237,7 +232,6 @@ public class Light_off extends JFrame implements ActionListener {
                 lights[2][4].setText("0");
                 lights[2][4].setBackground(Color.black);
             }
-            // edgeToggle(2,2,action);
             up(2, 4);
             down(2, 4);
             backward(2, 4);
@@ -249,7 +243,6 @@ public class Light_off extends JFrame implements ActionListener {
                 lights[3][0].setText("0");
                 lights[3][0].setBackground(Color.black);
             }
-            // edgeToggle(2,2,action);
             up(3, 0);
             down(3, 0);
             forward(3, 0);
@@ -261,7 +254,6 @@ public class Light_off extends JFrame implements ActionListener {
                 lights[3][1].setText("0");
                 lights[3][1].setBackground(Color.black);
             }
-            // edgeToggle(2,2,action);
             up(3, 1);
             down(3, 1);
             backward(3, 1);
@@ -274,7 +266,6 @@ public class Light_off extends JFrame implements ActionListener {
                 lights[3][2].setText("0");
                 lights[3][2].setBackground(Color.black);
             }
-            // edgeToggle(2,2,action);
             up(3, 2);
             down(3, 2);
             backward(3, 2);
@@ -287,7 +278,6 @@ public class Light_off extends JFrame implements ActionListener {
                 lights[3][3].setText("0");
                 lights[3][3].setBackground(Color.black);
             }
-            // edgeToggle(2,2,action);
             up(3, 3);
             down(3, 3);
             backward(3, 3);
@@ -300,7 +290,6 @@ public class Light_off extends JFrame implements ActionListener {
                 lights[3][4].setText("0");
                 lights[3][4].setBackground(Color.black);
             }
-            // edgeToggle(2,2,action);
             up(3, 4);
             down(3, 4);
             backward(3, 4);
@@ -312,7 +301,6 @@ public class Light_off extends JFrame implements ActionListener {
                 lights[4][0].setText("0");
                 lights[4][0].setBackground(Color.black);
             }
-            // edgeToggle(2,2,action);
             up(4, 0);
             forward(4, 0);
         } else if (action == lights[4][1]) {
@@ -323,7 +311,6 @@ public class Light_off extends JFrame implements ActionListener {
                 lights[4][1].setText("0");
                 lights[4][1].setBackground(Color.black);
             }
-            // edgeToggle(2,2,action);
             up(4, 1);
             forward(4, 1);
             backward(4, 1);
@@ -335,7 +322,6 @@ public class Light_off extends JFrame implements ActionListener {
                 lights[4][2].setText("0");
                 lights[4][2].setBackground(Color.black);
             }
-            // edgeToggle(2,2,action);
             up(4, 2);
             forward(4, 2);
             backward(4, 2);
@@ -348,7 +334,6 @@ public class Light_off extends JFrame implements ActionListener {
                 lights[4][3].setBackground(Color.black);
 
             }
-            // edgeToggle(2,2,action);
             up(4, 3);
             forward(4, 3);
             backward(4, 3);
@@ -361,7 +346,7 @@ public class Light_off extends JFrame implements ActionListener {
                 lights[4][4].setText("0");
                 lights[4][4].setBackground(Color.black);
             }
-            // edgeToggle(2,2,action);
+
             up(4, 4);
 
             backward(4, 4);

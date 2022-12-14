@@ -21,15 +21,20 @@ public class Light_off extends JFrame implements ActionListener {
         setLayout(new GridLayout(5, 5));
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Scanner kb = new Scanner(System.in);
-        String[][] input = {{"0", "0", "0", "0", "1"}, {"1", "1", "0", "0", "1"}, {"0", "1", "0", "1", "0"}, {"0", "0", "0", "0", "1"}, {"0", "0", "0", "0", "1"}};
+        //String[][] input = {{"0", "0", "0", "0", "1"}, {"1", "1", "0", "0", "1"}, {"0", "1", "0", "1", "0"}, {"0", "0", "0", "0", "1"}, {"0", "0", "0", "0", "1"}};
+        // C'est pour faire un test.
         // on se contante pour l'instant de placer des "0" et "1" pour indiquer si éclairer ou non.
         for (int i = 0; i < 5; i++) { // remplissage de la grille avec des boutons.
             for (int j = 0; j < 5; j++) {
+
                 lights[i][j] = new JButton();
                 lights[i][j].addActionListener(this);
-                lights[i][j].setText(input[i][j]); // on ajout les "0" et "1".
                 add(lights[i][j]);
-
+                if (Math.random() > 0.5) {
+                    lights[i][j].setText("1");
+                } else {
+                    lights[i][j].setText("0");
+                }
                 if (lights[i][j].getText() == "0") {
                     lights[i][j].setBackground(Color.black);
                 } else {

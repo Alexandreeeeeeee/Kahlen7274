@@ -420,4 +420,15 @@ public class Light_off extends JFrame implements ActionListener {
             }
         }
     }
+    
+    public boolean FinDePartie(){
+        for (int i = 0; i<5; i++){
+            for(int j = 0; j<5; j ++){
+                if(lights[i][j].getText() == "1"){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

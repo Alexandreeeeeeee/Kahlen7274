@@ -49,6 +49,7 @@ public class Light_off extends JFrame implements ActionListener {
         if (action == lights[0][0]) {
             if ("0".equals(lights[0][0].getText())) {
                 lights[0][0].setText("1");
+                
             } else {
                 lights[0][0].setText("0");
             }
@@ -318,32 +319,40 @@ public class Light_off extends JFrame implements ActionListener {
     public void forward(int a, int b) { // DEVANT 
         if ("0".equals(lights[a][b + 1].getText())) {
             lights[a][b + 1].setText("1");
+            lights[a][b + 1].setBackground(Color.green);
         } else {
             lights[a][b + 1].setText("0");
+            lights[a][b + 1].setBackground(Color.red);
         }
     }
 
     public void backward(int a, int b) { // DERRIERE
         if ("0".equals(lights[a][b - 1].getText())) {
             lights[a][b - 1].setText("1");
+            lights[a][b - 1].setBackground(Color.green);
         } else {
             lights[a][b - 1].setText("0");
+            lights[a][b - 1].setBackground(Color.green);
         }
     }
 
     public void up(int a, int b) { // EN HAUT 
         if ("0".equals(lights[a - 1][b].getText())) {
             lights[a - 1][b].setText("1");
+            lights[a - 1][b].setBackground(Color.green);
         } else {
             lights[a - 1][b].setText("0");
+            lights[a - 1][b].setBackground(Color.red);
         }
     }
 
     public void down(int a, int b) { // EN BAS
         if ("0".equals(lights[a + 1][b].getText())) {
             lights[a + 1][b].setText("1");
+            lights[a + 1][b].setBackground(Color.green);
         } else {
             lights[a + 1][b].setText("0");
+            lights[a + 1][b].setBackground(Color.red);
         }
     }
 

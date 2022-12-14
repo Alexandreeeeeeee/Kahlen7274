@@ -29,6 +29,12 @@ public class Light_off extends JFrame implements ActionListener {
                 lights[i][j].addActionListener(this);
                 lights[i][j].setText(input[i][j]); // on ajout les "0" et "1".
                 add(lights[i][j]);
+
+                if (lights[i][j].getText() == "0") {
+                    lights[i][j].setBackground(Color.red);
+                } else {
+                    lights[i][j].setBackground(Color.green);
+                }
             }
         }
     }
@@ -38,7 +44,15 @@ public class Light_off extends JFrame implements ActionListener {
         // ici si celui ci a été cliqué, on change son état.
 
         JButton action = (JButton) e.getSource();
-
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                if (lights[i][j].getText() == "0") {
+                    lights[i][j].setBackground(Color.red);
+                } else {
+                    lights[i][j].setBackground(Color.green);
+                }
+            }
+        }
         // LISTE DE CONDITIONS GERANTS LE STATUT DU BOUTON QU'ON CLIQUE // 
         if (action == lights[0][0]) {
             if ("0".equals(lights[0][0].getText())) {

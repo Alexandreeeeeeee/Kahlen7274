@@ -33,7 +33,7 @@ public class Light_off extends JFrame implements ActionListener {
                 if (lights[i][j].getText() == "0") {
                     lights[i][j].setBackground(Color.red);
                 } else {
-                    lights[i][j].setBackground(Color.green);
+                    lights[i][j].setBackground(Color.cyan);
                 }
             }
         }
@@ -319,7 +319,7 @@ public class Light_off extends JFrame implements ActionListener {
     public void forward(int a, int b) { // DEVANT 
         if ("0".equals(lights[a][b + 1].getText())) {
             lights[a][b + 1].setText("1");
-            lights[a][b + 1].setBackground(Color.green);
+            lights[a][b + 1].setBackground(Color.cyan);
         } else {
             lights[a][b + 1].setText("0");
             lights[a][b + 1].setBackground(Color.red);
@@ -329,17 +329,17 @@ public class Light_off extends JFrame implements ActionListener {
     public void backward(int a, int b) { // DERRIERE
         if ("0".equals(lights[a][b - 1].getText())) {
             lights[a][b - 1].setText("1");
-            lights[a][b - 1].setBackground(Color.green);
+            lights[a][b - 1].setBackground(Color.cyan);
         } else {
             lights[a][b - 1].setText("0");
-            lights[a][b - 1].setBackground(Color.green);
+            lights[a][b - 1].setBackground(Color.red);
         }
     }
 
     public void up(int a, int b) { // EN HAUT 
         if ("0".equals(lights[a - 1][b].getText())) {
             lights[a - 1][b].setText("1");
-            lights[a - 1][b].setBackground(Color.green);
+            lights[a - 1][b].setBackground(Color.cyan);
         } else {
             lights[a - 1][b].setText("0");
             lights[a - 1][b].setBackground(Color.red);
@@ -349,7 +349,7 @@ public class Light_off extends JFrame implements ActionListener {
     public void down(int a, int b) { // EN BAS
         if ("0".equals(lights[a + 1][b].getText())) {
             lights[a + 1][b].setText("1");
-            lights[a + 1][b].setBackground(Color.green);
+            lights[a + 1][b].setBackground(Color.cyan);
         } else {
             lights[a + 1][b].setText("0");
             lights[a + 1][b].setBackground(Color.red);

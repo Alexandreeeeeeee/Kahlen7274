@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package mini_projet_matteo_zavarella_alexandre_avril;
 import javax.swing.*;
 import java.awt.*;
@@ -9,10 +6,7 @@ import javax.swing.JFrame;
 import java.util.Scanner;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-/**
- *
- * @author matte
- */
+
 public class Light_off extends JFrame implements ActionListener{
   
   // attribut de la class
@@ -34,12 +28,10 @@ public class Light_off extends JFrame implements ActionListener{
          for(int j=0;j<5;j++)
           {
 
-            lights[i][j] = new JButton(); // Initializing all JButton
-            lights[i][j].addActionListener(this); // Registering listener 
-
-            lights[i][j].setText(input[i][j]); // setting text of each 
-                                               // button as per input String
-            add(lights[i][j]);  // adding JButton to the JFrame
+            lights[i][j] = new JButton(); 
+            lights[i][j].addActionListener(this); 
+            lights[i][j].setText(input[i][j]); 
+            add(lights[i][j]);  
 
           }
        }
@@ -163,8 +155,7 @@ public class Light_off extends JFrame implements ActionListener{
 
 
    // methode permettant de verifier les statut des boutons adjacent
-   public void forward(int a, int b) // calling to check status 
-                                     // of next Jbutton in same row
+   public void forward(int a, int b)                              
    {
       if("0".equals(lights[a][b+1].getText()))
        lights[a][b+1].setText("1");
@@ -172,8 +163,7 @@ public class Light_off extends JFrame implements ActionListener{
        lights[a][b+1].setText("0");
    }
 
-  public void backward(int a, int b) // calling to check status of previous 
-                                     // JButton in same row.
+  public void backward(int a, int b) 
    {
    if("0".equals(lights[a][b-1].getText()))
        lights[a][b-1].setText("1");
@@ -181,8 +171,7 @@ public class Light_off extends JFrame implements ActionListener{
        lights[a][b-1].setText("0");
    }
 
-   public void up(int a, int b) // calling to check status of Jbutton 
-                                // above the current one.
+   public void up(int a, int b)
    {
    if("0".equals(lights[a-1][b].getText()))
        lights[a-1][b].setText("1");
@@ -190,8 +179,7 @@ public class Light_off extends JFrame implements ActionListener{
        lights[a-1][b].setText("0");
     }
 
-   public void down(int a, int b) // calling to check status of Jbutton
-                                  // below the currrent Jbutton.
+   public void down(int a, int b) 
    {
    if("0".equals(lights[a+1][b].getText()))
        lights[a+1][b].setText("1");

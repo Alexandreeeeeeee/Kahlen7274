@@ -12,20 +12,23 @@ import javax.swing.JLabel;
 public class Light_off extends JFrame implements ActionListener {
 
     // attribut de la class
-    public static final int W = 400; // taille des bouton.
+    public static final int W = 400; // taille de la fentre qui s'ouvre par defaut.
     public static final int H = 400;
     JButton[][] lights = new JButton[5][5]; // grille de 5 par 5 
+    //JLabel TEST = new JLabel("test");
     int COLS = 5, ROWS = 5;
-
+    
     public Light_off() {
         super("Light Off");
         setSize(W, H);
         setLayout(new GridLayout(5, 5));
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        Scanner kb = new Scanner(System.in);
+        //setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //Scanner kb = new Scanner(System.in);
+
         //String[][] input = {{"0", "0", "0", "0", "1"}, {"1", "1", "0", "0", "1"}, {"0", "1", "0", "1", "0"}, {"0", "0", "0", "0", "1"}, {"0", "0", "0", "0", "1"}};
         // C'est pour faire un test.
         // on se contante pour l'instant de placer des "0" et "1" pour indiquer si éclairer ou non.
+        
         for (int i = 0; i < 5; i++) { // remplissage de la grille avec des boutons.
             for (int j = 0; j < 5; j++) {
 

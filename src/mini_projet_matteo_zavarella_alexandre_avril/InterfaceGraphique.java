@@ -91,7 +91,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         Bouton_lvl3 = new javax.swing.JButton();
         Bouton_lvl4 = new javax.swing.JButton();
         Bouton_lvl5 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        Bouton_Alea = new javax.swing.JButton();
         Score = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         Bouton_Solution = new javax.swing.JButton();
@@ -336,7 +336,12 @@ public class InterfaceGraphique extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setText("Aleatoire");
+        Bouton_Alea.setText("Aleatoire");
+        Bouton_Alea.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Bouton_AleaActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("Compteur de coups :");
 
@@ -372,7 +377,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
                     .addComponent(Bouton_lvl3)
                     .addComponent(Bouton_lvl4)
                     .addComponent(Bouton_lvl5)
-                    .addComponent(jButton1))
+                    .addComponent(Bouton_Alea))
                 .addGap(179, 179, 179))
         );
         jPanel1Layout.setVerticalGroup(
@@ -391,7 +396,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
                         .addGap(57, 57, 57)
                         .addComponent(Bouton_lvl5)
                         .addGap(49, 49, 49)
-                        .addComponent(jButton1))
+                        .addComponent(Bouton_Alea))
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 488, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(135, 135, 135))
             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -891,6 +896,96 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_Bouton_SolutionActionPerformed
 
+    private void Bouton_AleaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton_AleaActionPerformed
+        // TODO add your handling code here:
+        nettoyerBoutons();
+        rebootBoutons();
+        int a = (int)( 1 + Math.random()* 26);
+        int b = (int)( 1 + Math.random()* 26);
+        int c = (int)( 1 + Math.random()* 26);
+        int d = (int)( 1 + Math.random()* 26);
+        int e = (int)( 1 + Math.random()* 26);
+        int f = (int)( 1 + Math.random()* 26);
+        int g = (int)( 1 + Math.random()* 26);
+        int h = (int)( 1 + Math.random()* 26);
+        
+        if (a == 1 || b == 1 || c == 1 || d == 1 || e == 1 || f == 1 || g == 1 || h == 1) {
+            Bouton1.setBackground(Color.CYAN);
+        }
+        if (a == 2 || b == 2 || c == 2 || d == 2 || e == 2 || f == 2 || g == 2 || h == 2) {
+            Bouton2.setBackground(Color.CYAN);
+        }
+        if (a == 3 || b == 3 || c == 3 || d == 3 || e == 3 || f == 3 || g == 3 || h == 3) {
+            Bouton3.setBackground(Color.CYAN);
+        }
+        if (a == 4 || b == 4 || c == 4 || d == 4 || e == 4 || f == 4 || g == 4 || h == 4) {
+            Bouton4.setBackground(Color.CYAN);
+        }
+        if (a == 5 || b == 5 || c == 5 || d == 5 || e == 5 || f == 5 || g == 5 || h == 5) {
+            Bouton5.setBackground(Color.CYAN);
+        }
+        if (a == 6 || b == 6 || c == 6 || d == 6 || e == 6 || f == 6 || g == 6 || h == 6) {
+            Bouton6.setBackground(Color.CYAN);
+        }
+        if (a == 7 || b == 7 || c == 7 || d == 7 || e == 7 || f == 7 || g == 7 || h == 7) {
+            Bouton7.setBackground(Color.CYAN);
+        }
+        if (a == 8 || b == 8 || c == 8 || d == 8 || e == 8 || f == 8 || g == 8 || h == 8) {
+            Bouton8.setBackground(Color.CYAN);
+        }
+        if (a == 9 || b == 9|| c == 9 || d == 9 || e ==  9 || f == 9 || g == 9 || h == 9) {
+            Bouton9.setBackground(Color.CYAN);
+        }
+        if (a == 11 || b == 11 || c == 11 || d == 11 || e == 11 || f == 11 || g == 11 || h == 11) {
+            Bouton11.setBackground(Color.CYAN);
+        }
+        if (a == 12 || b == 12 || c == 12 || d == 12 || e == 12 || f == 12 || g == 12 || h == 12) {
+            Bouton12.setBackground(Color.CYAN);
+        }
+        if (a == 13 || b == 13 || c == 13 || d == 13 || e == 13 || f == 13 || g == 13 || h == 13) {
+            Bouton13.setBackground(Color.CYAN);
+        }
+        if (a == 14 || b == 14 || c == 14 || d == 14 || e == 14 || f == 14 || g == 14 || h == 14) {
+            Bouton14.setBackground(Color.CYAN);
+        }
+        if (a == 15 || b == 15 || c == 15 || d == 15 || e == 15 || f == 15 || g == 15 || h == 15) {
+            Bouton15.setBackground(Color.CYAN);
+        }
+        if (a == 16 || b == 16 || c == 16 || d == 16 || e == 16 || f == 16 || g == 16 || h == 16) {
+            Bouton16.setBackground(Color.CYAN);
+        }
+        if (a == 17 || b == 17 || c == 17 || d == 17 || e == 17 || f == 17 || g == 17 || h == 17) {
+            Bouton17.setBackground(Color.CYAN);
+        }
+        if (a == 18 || b == 18 || c == 18 || d == 18 || e == 18 || f == 18 || g == 18 || h == 18) {
+            Bouton18.setBackground(Color.CYAN);
+        }
+        if (a == 19 || b == 19 || c == 19 || d == 19 || e == 19 || f == 19 || g == 19 || h == 19) {
+            Bouton19.setBackground(Color.CYAN);
+        }
+        if (a == 20 || b == 20 || c == 20 || d == 20 || e == 20 || f == 20 || g == 20 || h == 20) {
+            Bouton20.setBackground(Color.CYAN);
+        }
+        if (a == 21 || b == 21 || c == 21 || d == 21 || e == 21 || f == 21 || g == 21 || h == 21) {
+            Bouton21.setBackground(Color.CYAN);
+        }
+        if (a == 22 || b == 22 || c == 22 || d == 22 || e == 22 || f == 22 || g == 22 || h == 22) {
+            Bouton22.setBackground(Color.CYAN);
+        }
+        if (a == 23 || b == 23 || c == 23 || d == 23 || e == 23 || f == 23 || g == 23 || h == 23) {
+            Bouton23.setBackground(Color.CYAN);
+        }
+        if (a == 24 || b == 24 || c == 24 || d == 24 || e == 24 || f == 24 || g == 24 || h == 24) {
+            Bouton24.setBackground(Color.CYAN);
+        }
+        if (a == 25 || b == 25 || c == 25 || d == 25 || e == 25 || f == 25 || g == 25 || h == 25) {
+            Bouton25.setBackground(Color.CYAN);
+        }
+        if (a == 1 || b == 1 || c == 1 || d == 1 || e == 1 || f == 1 || g == 1 || h ==1) {
+            Bouton1.setBackground(Color.CYAN);
+        }
+    }//GEN-LAST:event_Bouton_AleaActionPerformed
+
     
     public void nettoyerBoutons() {
         Bouton1.setText("");
@@ -1027,6 +1122,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
     private javax.swing.JButton Bouton7;
     private javax.swing.JButton Bouton8;
     private javax.swing.JButton Bouton9;
+    private javax.swing.JButton Bouton_Alea;
     private javax.swing.JButton Bouton_Solution;
     private javax.swing.JButton Bouton_lvl1;
     private javax.swing.JButton Bouton_lvl2;
@@ -1034,7 +1130,6 @@ public class InterfaceGraphique extends javax.swing.JFrame {
     private javax.swing.JButton Bouton_lvl4;
     private javax.swing.JButton Bouton_lvl5;
     private javax.swing.JLabel Score;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;

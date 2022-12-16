@@ -13,6 +13,9 @@ import javax.swing.JButton;
  */
 public class InterfaceGraphique extends javax.swing.JFrame {
 
+    
+    int cpt = 0;
+    int lvl;
     /**
      * Creates new form InterfaceGraphique
      */
@@ -89,6 +92,9 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         Bouton_lvl4 = new javax.swing.JButton();
         Bouton_lvl5 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        Score = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        Bouton_Solution = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new java.awt.GridLayout(1, 0));
@@ -332,12 +338,32 @@ public class InterfaceGraphique extends javax.swing.JFrame {
 
         jButton1.setText("Aleatoire");
 
+        jLabel1.setText("Compteur de coups :");
+
+        Bouton_Solution.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        Bouton_Solution.setText("Solutions");
+        Bouton_Solution.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Bouton_SolutionActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(321, 321, 321)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(76, 76, 76)
+                        .addComponent(Score, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(64, 64, 64)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(53, 53, 53)
+                        .addComponent(Bouton_Solution, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(110, 110, 110)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -368,6 +394,14 @@ public class InterfaceGraphique extends javax.swing.JFrame {
                         .addComponent(jButton1))
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 488, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(135, 135, 135))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(181, 181, 181)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(Score)
+                .addGap(131, 131, 131)
+                .addComponent(Bouton_Solution, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel1);
@@ -380,6 +414,10 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         changerCouleurBouton(Bouton1);
         changerCouleurBouton(Bouton2);
         changerCouleurBouton(Bouton6);
+        Bouton1.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
     }//GEN-LAST:event_Bouton1ActionPerformed
 
     private void Bouton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton2ActionPerformed
@@ -388,6 +426,10 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         changerCouleurBouton(Bouton2);
         changerCouleurBouton(Bouton3);
         changerCouleurBouton(Bouton7);
+        Bouton2.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
     }//GEN-LAST:event_Bouton2ActionPerformed
 
     private void Bouton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton3ActionPerformed
@@ -396,6 +438,10 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         changerCouleurBouton(Bouton3);
         changerCouleurBouton(Bouton4);
         changerCouleurBouton(Bouton8);
+        Bouton3.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
     }//GEN-LAST:event_Bouton3ActionPerformed
 
     private void Bouton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton4ActionPerformed
@@ -404,6 +450,10 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         changerCouleurBouton(Bouton4);
         changerCouleurBouton(Bouton5);
         changerCouleurBouton(Bouton9);
+        Bouton4.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
     }//GEN-LAST:event_Bouton4ActionPerformed
 
     private void Bouton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton5ActionPerformed
@@ -411,6 +461,10 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         changerCouleurBouton(Bouton4);
         changerCouleurBouton(Bouton5);
         changerCouleurBouton(Bouton10);
+        Bouton5.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
     }//GEN-LAST:event_Bouton5ActionPerformed
 
     private void Bouton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton6ActionPerformed
@@ -419,6 +473,10 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         changerCouleurBouton(Bouton6);
         changerCouleurBouton(Bouton7);
         changerCouleurBouton(Bouton11);
+        Bouton6.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
     }//GEN-LAST:event_Bouton6ActionPerformed
 
     private void Bouton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton7ActionPerformed
@@ -428,6 +486,10 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         changerCouleurBouton(Bouton7);
         changerCouleurBouton(Bouton8);
         changerCouleurBouton(Bouton12);
+        Bouton7.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
     }//GEN-LAST:event_Bouton7ActionPerformed
 
     private void Bouton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton8ActionPerformed
@@ -437,6 +499,10 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         changerCouleurBouton(Bouton9);
         changerCouleurBouton(Bouton3);
         changerCouleurBouton(Bouton13);
+        Bouton8.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
     }//GEN-LAST:event_Bouton8ActionPerformed
 
     private void Bouton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton9ActionPerformed
@@ -446,6 +512,10 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         changerCouleurBouton(Bouton10);
         changerCouleurBouton(Bouton4);
         changerCouleurBouton(Bouton14);
+        Bouton9.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
     }//GEN-LAST:event_Bouton9ActionPerformed
 
     private void Bouton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton10ActionPerformed
@@ -454,6 +524,10 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         changerCouleurBouton(Bouton10);
         changerCouleurBouton(Bouton5);
         changerCouleurBouton(Bouton15);
+        Bouton10.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
     }//GEN-LAST:event_Bouton10ActionPerformed
 
     private void Bouton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton11ActionPerformed
@@ -462,6 +536,10 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         changerCouleurBouton(Bouton12);
         changerCouleurBouton(Bouton6);
         changerCouleurBouton(Bouton16);
+        Bouton11.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
     }//GEN-LAST:event_Bouton11ActionPerformed
 
     private void Bouton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton12ActionPerformed
@@ -471,6 +549,10 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         changerCouleurBouton(Bouton13);
         changerCouleurBouton(Bouton7);
         changerCouleurBouton(Bouton17);
+        Bouton12.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
     }//GEN-LAST:event_Bouton12ActionPerformed
 
     private void Bouton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton13ActionPerformed
@@ -480,6 +562,10 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         changerCouleurBouton(Bouton14);
         changerCouleurBouton(Bouton8);
         changerCouleurBouton(Bouton18);
+        Bouton13.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
     }//GEN-LAST:event_Bouton13ActionPerformed
 
     private void Bouton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton14ActionPerformed
@@ -489,6 +575,10 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         changerCouleurBouton(Bouton15);
         changerCouleurBouton(Bouton9);
         changerCouleurBouton(Bouton19);
+        Bouton14.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
     }//GEN-LAST:event_Bouton14ActionPerformed
 
     private void Bouton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton15ActionPerformed
@@ -497,6 +587,10 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         changerCouleurBouton(Bouton15);
         changerCouleurBouton(Bouton10);
         changerCouleurBouton(Bouton20);
+        Bouton15.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
     }//GEN-LAST:event_Bouton15ActionPerformed
 
     private void Bouton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton16ActionPerformed
@@ -505,6 +599,10 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         changerCouleurBouton(Bouton17);
         changerCouleurBouton(Bouton11);
         changerCouleurBouton(Bouton21);
+        Bouton16.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
     }//GEN-LAST:event_Bouton16ActionPerformed
 
     private void Bouton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton17ActionPerformed
@@ -514,6 +612,10 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         changerCouleurBouton(Bouton18);
         changerCouleurBouton(Bouton12);
         changerCouleurBouton(Bouton22);
+        Bouton17.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
     }//GEN-LAST:event_Bouton17ActionPerformed
 
     private void Bouton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton18ActionPerformed
@@ -523,6 +625,10 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         changerCouleurBouton(Bouton19);
         changerCouleurBouton(Bouton13);
         changerCouleurBouton(Bouton23);
+        Bouton18.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
     }//GEN-LAST:event_Bouton18ActionPerformed
 
     private void Bouton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton19ActionPerformed
@@ -532,6 +638,10 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         changerCouleurBouton(Bouton20);
         changerCouleurBouton(Bouton14);
         changerCouleurBouton(Bouton24);
+        Bouton19.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
     }//GEN-LAST:event_Bouton19ActionPerformed
 
     private void Bouton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton20ActionPerformed
@@ -540,6 +650,10 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         changerCouleurBouton(Bouton20);
         changerCouleurBouton(Bouton15);
         changerCouleurBouton(Bouton25);
+        Bouton20.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
     }//GEN-LAST:event_Bouton20ActionPerformed
 
     private void Bouton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton21ActionPerformed
@@ -547,6 +661,10 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         changerCouleurBouton(Bouton21);
         changerCouleurBouton(Bouton22);
         changerCouleurBouton(Bouton16);
+        Bouton21.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
     }//GEN-LAST:event_Bouton21ActionPerformed
 
     private void Bouton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton22ActionPerformed
@@ -555,6 +673,10 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         changerCouleurBouton(Bouton22);
         changerCouleurBouton(Bouton23);
         changerCouleurBouton(Bouton17);
+        Bouton22.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
     }//GEN-LAST:event_Bouton22ActionPerformed
 
     private void Bouton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton23ActionPerformed
@@ -563,6 +685,10 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         changerCouleurBouton(Bouton23);
         changerCouleurBouton(Bouton24);
         changerCouleurBouton(Bouton18);
+        Bouton23.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
     }//GEN-LAST:event_Bouton23ActionPerformed
 
     private void Bouton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton24ActionPerformed
@@ -570,7 +696,11 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         changerCouleurBouton(Bouton23);
         changerCouleurBouton(Bouton24);
         changerCouleurBouton(Bouton25);
-        changerCouleurBouton(Bouton18);
+        changerCouleurBouton(Bouton19);
+        Bouton24.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
     }//GEN-LAST:event_Bouton24ActionPerformed
 
     private void Bouton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton25ActionPerformed
@@ -578,22 +708,38 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         changerCouleurBouton(Bouton24);
         changerCouleurBouton(Bouton25);
         changerCouleurBouton(Bouton20);
+        Bouton25.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
     }//GEN-LAST:event_Bouton25ActionPerformed
 
     private void Bouton_lvl1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton_lvl1ActionPerformed
         // TODO add your handling code here:
         rebootBoutons();
+        nettoyerBoutons();
+        Bouton_Solution.setEnabled(true);
+        Bouton1.setBackground(Color.CYAN);
         Bouton2.setBackground(Color.CYAN);
         Bouton6.setBackground(Color.CYAN);
-        Bouton7.setBackground(Color.CYAN);
         Bouton4.setBackground(Color.CYAN);
-        Bouton9.setBackground(Color.CYAN);
+        Bouton5.setBackground(Color.CYAN);
         Bouton10.setBackground(Color.CYAN);
+        Bouton16.setBackground(Color.CYAN);
+        Bouton22.setBackground(Color.CYAN);
+        Bouton21.setBackground(Color.CYAN);
+        Bouton20.setBackground(Color.CYAN);
+        Bouton25.setBackground(Color.CYAN);
+        Bouton24.setBackground(Color.CYAN);
+        
+        lvl = 1;
     }//GEN-LAST:event_Bouton_lvl1ActionPerformed
 
     private void Bouton_lvl2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton_lvl2ActionPerformed
         // TODO add your handling code here:
         rebootBoutons();
+        nettoyerBoutons();
+        Bouton_Solution.setEnabled(true);
         Bouton1.setBackground(Color.CYAN);
         Bouton4.setBackground(Color.CYAN);
         Bouton5.setBackground(Color.CYAN);
@@ -605,12 +751,15 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         Bouton20.setBackground(Color.CYAN);
         Bouton22.setBackground(Color.CYAN);
         Bouton25.setBackground(Color.CYAN);
+        lvl = 2;
         
     }//GEN-LAST:event_Bouton_lvl2ActionPerformed
 
     private void Bouton_lvl3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton_lvl3ActionPerformed
         // TODO add your handling code here:
         rebootBoutons();
+        nettoyerBoutons();
+        Bouton_Solution.setEnabled(true);
         Bouton2.setBackground(Color.CYAN);
         Bouton3.setBackground(Color.CYAN);
         Bouton4.setBackground(Color.CYAN);
@@ -622,12 +771,15 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         Bouton19.setBackground(Color.CYAN);
         Bouton23.setBackground(Color.CYAN);
         Bouton25.setBackground(Color.CYAN);
+        lvl = 3;
         
     }//GEN-LAST:event_Bouton_lvl3ActionPerformed
 
     private void Bouton_lvl4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton_lvl4ActionPerformed
         // TODO add your handling code here:
         rebootBoutons();
+        nettoyerBoutons();
+        Bouton_Solution.setEnabled(true);
         Bouton1.setBackground(Color.CYAN);
         Bouton2.setBackground(Color.CYAN);
         Bouton3.setBackground(Color.CYAN);
@@ -645,11 +797,14 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         Bouton22.setBackground(Color.CYAN);
         Bouton23.setBackground(Color.CYAN);
         Bouton24.setBackground(Color.CYAN);
+        lvl = 4;
     }//GEN-LAST:event_Bouton_lvl4ActionPerformed
 
     private void Bouton_lvl5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton_lvl5ActionPerformed
         // TODO add your handling code here:
         rebootBoutons();
+        nettoyerBoutons();
+        Bouton_Solution.setEnabled(true);
         Bouton1.setBackground(Color.CYAN);
         Bouton2.setBackground(Color.CYAN);
         Bouton3.setBackground(Color.CYAN);
@@ -668,8 +823,102 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         Bouton22.setBackground(Color.CYAN);
         Bouton23.setBackground(Color.CYAN);
         Bouton24.setBackground(Color.CYAN);
+        lvl = 5;
     }//GEN-LAST:event_Bouton_lvl5ActionPerformed
 
+    private void Bouton_SolutionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton_SolutionActionPerformed
+        // TODO add your handling code here:
+        if (lvl == 1) {
+            Bouton1.setText("X");
+            Bouton5.setText("X");
+            Bouton21.setText("X");
+            Bouton25.setText("X");
+        }
+        if (lvl == 2) {
+            Bouton3.setText("X");
+            Bouton4.setText("X");
+            Bouton5.setText("X");
+            Bouton6.setText("X");
+            Bouton7.setText("X");
+            Bouton10.setText("X");
+            Bouton12.setText("X");
+            Bouton13.setText("X");
+            Bouton17.setText("X");
+            Bouton19.setText("X");
+            Bouton21.setText("X");
+            Bouton22.setText("X");
+            Bouton24.setText("X");
+            Bouton_Solution.setEnabled(false);
+            
+        }
+        if (lvl == 3) {
+            Bouton7.setText("X");
+            Bouton8.setText("X");
+            Bouton9.setText("X");
+            Bouton13.setText("X");
+            Bouton15.setText("X");
+            Bouton16.setText("X");
+            Bouton17.setText("X");
+            Bouton18.setText("X");
+            Bouton19.setText("X");
+            Bouton22.setText("X");
+            Bouton24.setText("X");
+            
+        }
+        if (lvl == 4) {
+            Bouton5.setText("X");
+            Bouton6.setText("X");
+            Bouton7.setText("X");
+            Bouton8.setText("X");
+            Bouton9.setText("X");
+            Bouton10.setText("X");
+            Bouton11.setText("X");
+            Bouton17.setText("X");
+            Bouton20.setText("X");
+            Bouton24.setText("X");
+        }
+        if (lvl == 5) {
+            Bouton2.setText("X");
+            Bouton3.setText("X");
+            Bouton5.setText("X");
+            Bouton7.setText("X");
+            Bouton8.setText("X");
+            Bouton15.setText("X");
+            Bouton16.setText("X");
+            Bouton20.setText("X");
+            Bouton22.setText("X");
+            Bouton25.setText("X");
+        }
+    }//GEN-LAST:event_Bouton_SolutionActionPerformed
+
+    
+    public void nettoyerBoutons() {
+        Bouton1.setText("");
+        Bouton2.setText("");
+        Bouton3.setText("");
+        Bouton4.setText("");
+        Bouton5.setText("");
+        Bouton6.setText("");
+        Bouton7.setText("");
+        Bouton8.setText("");
+        Bouton9.setText("");
+        Bouton10.setText("");
+        Bouton11.setText("");
+        Bouton12.setText("");
+        Bouton13.setText("");
+        Bouton14.setText("");
+        Bouton15.setText("");
+        Bouton16.setText("");
+        Bouton17.setText("");
+        Bouton18.setText("");
+        Bouton19.setText("");
+        Bouton20.setText("");
+        Bouton21.setText("");
+        Bouton22.setText("");
+        Bouton23.setText("");
+        Bouton24.setText("");
+        Bouton25.setText("");
+    }
     
     public void rebootBoutons() {
         Bouton1.setBackground(Color.DARK_GRAY);
@@ -702,7 +951,9 @@ public class InterfaceGraphique extends javax.swing.JFrame {
     
     public void Victoire() {
         if (Bouton1.getBackground() == Color.DARK_GRAY && Bouton2.getBackground() == Color.DARK_GRAY && Bouton3.getBackground() == Color.DARK_GRAY && Bouton4.getBackground() == Color.DARK_GRAY && Bouton5.getBackground() == Color.DARK_GRAY && Bouton6.getBackground() == Color.DARK_GRAY && Bouton7.getBackground() == Color.DARK_GRAY && Bouton8.getBackground() == Color.DARK_GRAY && Bouton9.getBackground() == Color.DARK_GRAY && Bouton10.getBackground() == Color.DARK_GRAY && Bouton11.getBackground() == Color.DARK_GRAY && Bouton12.getBackground() == Color.DARK_GRAY && Bouton13.getBackground() == Color.DARK_GRAY && Bouton14.getBackground() == Color.DARK_GRAY && Bouton15.getBackground() == Color.DARK_GRAY && Bouton16.getBackground() == Color.DARK_GRAY && Bouton17.getBackground() == Color.DARK_GRAY && Bouton18.getBackground() == Color.DARK_GRAY && Bouton19.getBackground() == Color.DARK_GRAY && Bouton20.getBackground() == Color.DARK_GRAY && Bouton21.getBackground() == Color.DARK_GRAY && Bouton22.getBackground() == Color.DARK_GRAY &&Bouton23.getBackground() == Color.DARK_GRAY && Bouton24.getBackground() == Color.DARK_GRAY && Bouton25.getBackground() == Color.DARK_GRAY) {
-            
+            FenetreVictoire vic = new FenetreVictoire();
+            vic.setVisible(true);
+            InterfaceGraphique.super.dispose();
         }
     }
     
@@ -776,12 +1027,15 @@ public class InterfaceGraphique extends javax.swing.JFrame {
     private javax.swing.JButton Bouton7;
     private javax.swing.JButton Bouton8;
     private javax.swing.JButton Bouton9;
+    private javax.swing.JButton Bouton_Solution;
     private javax.swing.JButton Bouton_lvl1;
     private javax.swing.JButton Bouton_lvl2;
     private javax.swing.JButton Bouton_lvl3;
     private javax.swing.JButton Bouton_lvl4;
     private javax.swing.JButton Bouton_lvl5;
+    private javax.swing.JLabel Score;
     private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables

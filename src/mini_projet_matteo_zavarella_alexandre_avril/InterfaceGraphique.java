@@ -417,6 +417,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
             Bouton5.setText("X");
             Bouton21.setText("X");
             Bouton25.setText("X");
+            Bouton_Solution.setEnabled(false);
         }
         if (lvl == 2) {
             Bouton3.setText("X");
@@ -433,7 +434,6 @@ public class InterfaceGraphique extends javax.swing.JFrame {
             Bouton22.setText("X");
             Bouton24.setText("X");
             Bouton_Solution.setEnabled(false);
-
         }
         if (lvl == 3) {
             Bouton7.setText("X");
@@ -447,7 +447,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
             Bouton19.setText("X");
             Bouton22.setText("X");
             Bouton24.setText("X");
-
+            Bouton_Solution.setEnabled(false);
         }
         if (lvl == 4) {
             Bouton5.setText("X");
@@ -460,6 +460,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
             Bouton17.setText("X");
             Bouton20.setText("X");
             Bouton24.setText("X");
+            Bouton_Solution.setEnabled(false);
         }
         if (lvl == 5) {
             Bouton2.setText("X");
@@ -472,6 +473,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
             Bouton20.setText("X");
             Bouton22.setText("X");
             Bouton25.setText("X");
+            Bouton_Solution.setEnabled(false);
         }
     }//GEN-LAST:event_Bouton_SolutionActionPerformed
 
@@ -591,6 +593,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         Bouton23.setBackground(Color.YELLOW);
         Bouton24.setBackground(Color.YELLOW);
         lvl = 5;
+        cpt = 0;
     }//GEN-LAST:event_Bouton_lvl5ActionPerformed
 
     private void Bouton_lvl4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton_lvl4ActionPerformed
@@ -617,6 +620,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         Bouton23.setBackground(Color.YELLOW);
         Bouton24.setBackground(Color.YELLOW);
         lvl = 4;
+        cpt = 0;
     }//GEN-LAST:event_Bouton_lvl4ActionPerformed
 
     private void Bouton_lvl3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton_lvl3ActionPerformed
@@ -637,6 +641,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         Bouton23.setBackground(Color.YELLOW);
         Bouton25.setBackground(Color.YELLOW);
         lvl = 3;
+        cpt = 0;
 
     }//GEN-LAST:event_Bouton_lvl3ActionPerformed
 
@@ -658,6 +663,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         Bouton22.setBackground(Color.YELLOW);
         Bouton25.setBackground(Color.YELLOW);
         lvl = 2;
+        cpt = 0;
 
     }//GEN-LAST:event_Bouton_lvl2ActionPerformed
 
@@ -679,8 +685,8 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         Bouton20.setBackground(Color.YELLOW);
         Bouton25.setBackground(Color.YELLOW);
         Bouton24.setBackground(Color.YELLOW);
-
         lvl = 1;
+        cpt = 0;
     }//GEN-LAST:event_Bouton_lvl1ActionPerformed
 
     private void Bouton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton25ActionPerformed

@@ -5,6 +5,10 @@
 package mini_projet_matteo_zavarella_alexandre_avril;
 
 import java.awt.Color;
+import java.io.File;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 import javax.swing.JButton;
 
 /**
@@ -21,6 +25,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
      */
     public InterfaceGraphique() {
         initComponents();
+        PlayMusic("NYX.wav");
         JButton[][] lights = new JButton[5][5];
         Bouton1.setBackground(Color.BLACK);
         Bouton2.setBackground(Color.BLACK);
@@ -47,6 +52,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         Bouton23.setBackground(Color.BLACK);
         Bouton24.setBackground(Color.BLACK);
         Bouton25.setBackground(Color.BLACK);
+       
         
     }
 
@@ -405,6 +411,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
 
     private void Bouton_SolutionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton_SolutionActionPerformed
         // TODO add your handling code here:
+        PlayMusic("directory.wav");
         if (lvl == 1) {
             Bouton1.setText("X");
             Bouton5.setText("X");
@@ -470,6 +477,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
 
     private void Bouton_AleaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton_AleaActionPerformed
         // TODO add your handling code here:
+        PlayMusic("directory.wav");
         nettoyerBoutons();
         rebootBoutons();
         int a = (int)( 1 + Math.random()* 26);
@@ -560,6 +568,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
 
     private void Bouton_lvl5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton_lvl5ActionPerformed
         // TODO add your handling code here:
+        PlayMusic("directory.wav");
         rebootBoutons();
         nettoyerBoutons();
         Bouton_Solution.setEnabled(true);
@@ -586,6 +595,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
 
     private void Bouton_lvl4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton_lvl4ActionPerformed
         // TODO add your handling code here:
+        PlayMusic("directory.wav");
         rebootBoutons();
         nettoyerBoutons();
         Bouton_Solution.setEnabled(true);
@@ -611,6 +621,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
 
     private void Bouton_lvl3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton_lvl3ActionPerformed
         // TODO add your handling code here:
+        PlayMusic("directory.wav");
         rebootBoutons();
         nettoyerBoutons();
         Bouton_Solution.setEnabled(true);
@@ -631,6 +642,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
 
     private void Bouton_lvl2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton_lvl2ActionPerformed
         // TODO add your handling code here:
+        PlayMusic("directory.wav");
         rebootBoutons();
         nettoyerBoutons();
         Bouton_Solution.setEnabled(true);
@@ -651,6 +663,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
 
     private void Bouton_lvl1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton_lvl1ActionPerformed
         // TODO add your handling code here:
+        PlayMusic("directory.wav");
         rebootBoutons();
         nettoyerBoutons();
         Bouton_Solution.setEnabled(true);
@@ -1048,6 +1061,22 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         }
         else {
             btn.setBackground(Color.BLACK);
+        }
+    }
+    public static void PlayMusic(String location) {
+        try {
+            File musicPath = new File(location);
+            if(musicPath.exists()) {
+                AudioInputStream audioInput = AudioSystem.getAudioInputStream(musicPath);
+                Clip clip = AudioSystem.getClip();
+                clip.open(audioInput);
+                clip.start();
+            }
+            else {
+                System.out.println("Trouve pas le fichier");
+            }
+        }catch(Exception e) {
+            
         }
     }
     /**

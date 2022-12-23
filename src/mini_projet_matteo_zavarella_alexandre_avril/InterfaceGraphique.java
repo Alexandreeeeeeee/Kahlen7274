@@ -414,9 +414,13 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         PlayMusic("directory.wav");
         if (lvl == 1) {
             Bouton1.setText("X");
+            //Bouton1.setForeground(Color.red);
             Bouton5.setText("X");
+            //Bouton5.setForeground(Color.red);
             Bouton21.setText("X");
+            //Bouton21.setForeground(Color.red);
             Bouton25.setText("X");
+            //Bouton25.setForeground(Color.red);
             Bouton_Solution.setEnabled(false);
         }
         if (lvl == 2) {

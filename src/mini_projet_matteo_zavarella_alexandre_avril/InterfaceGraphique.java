@@ -22,31 +22,31 @@ public class InterfaceGraphique extends javax.swing.JFrame {
     public InterfaceGraphique() {
         initComponents();
         JButton[][] lights = new JButton[5][5];
-        Bouton1.setBackground(Color.DARK_GRAY);
-        Bouton2.setBackground(Color.DARK_GRAY);
-        Bouton3.setBackground(Color.DARK_GRAY);
-        Bouton4.setBackground(Color.DARK_GRAY);
-        Bouton5.setBackground(Color.DARK_GRAY);
-        Bouton6.setBackground(Color.DARK_GRAY);
-        Bouton7.setBackground(Color.DARK_GRAY);
-        Bouton8.setBackground(Color.DARK_GRAY);
-        Bouton9.setBackground(Color.DARK_GRAY);
-        Bouton10.setBackground(Color.DARK_GRAY);
-        Bouton11.setBackground(Color.DARK_GRAY);
-        Bouton12.setBackground(Color.DARK_GRAY);
-        Bouton13.setBackground(Color.DARK_GRAY);
-        Bouton14.setBackground(Color.DARK_GRAY);
-        Bouton15.setBackground(Color.DARK_GRAY);
-        Bouton16.setBackground(Color.DARK_GRAY);
-        Bouton17.setBackground(Color.DARK_GRAY);
-        Bouton18.setBackground(Color.DARK_GRAY);
-        Bouton19.setBackground(Color.DARK_GRAY);
-        Bouton20.setBackground(Color.DARK_GRAY);
-        Bouton21.setBackground(Color.DARK_GRAY);
-        Bouton22.setBackground(Color.DARK_GRAY);
-        Bouton23.setBackground(Color.DARK_GRAY);
-        Bouton24.setBackground(Color.DARK_GRAY);
-        Bouton25.setBackground(Color.DARK_GRAY);
+        Bouton1.setBackground(Color.BLACK);
+        Bouton2.setBackground(Color.BLACK);
+        Bouton3.setBackground(Color.BLACK);
+        Bouton4.setBackground(Color.BLACK);
+        Bouton5.setBackground(Color.BLACK);
+        Bouton6.setBackground(Color.BLACK);
+        Bouton7.setBackground(Color.BLACK);
+        Bouton8.setBackground(Color.BLACK);
+        Bouton9.setBackground(Color.BLACK);
+        Bouton10.setBackground(Color.BLACK);
+        Bouton11.setBackground(Color.BLACK);
+        Bouton12.setBackground(Color.BLACK);
+        Bouton13.setBackground(Color.BLACK);
+        Bouton14.setBackground(Color.BLACK);
+        Bouton15.setBackground(Color.BLACK);
+        Bouton16.setBackground(Color.BLACK);
+        Bouton17.setBackground(Color.BLACK);
+        Bouton18.setBackground(Color.BLACK);
+        Bouton19.setBackground(Color.BLACK);
+        Bouton20.setBackground(Color.BLACK);
+        Bouton21.setBackground(Color.BLACK);
+        Bouton22.setBackground(Color.BLACK);
+        Bouton23.setBackground(Color.BLACK);
+        Bouton24.setBackground(Color.BLACK);
+        Bouton25.setBackground(Color.BLACK);
         
     }
 
@@ -95,13 +95,20 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         Score = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         Bouton_Solution = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new java.awt.GridLayout(1, 0));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jPanel1.setBackground(new java.awt.Color(51, 255, 0));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel2.setBackground(new java.awt.Color(255, 255, 0));
+        jPanel2.setForeground(new java.awt.Color(255, 255, 0));
         jPanel2.setLayout(new java.awt.GridLayout(5, 5));
 
-        Bouton1.setBackground(new java.awt.Color(51, 51, 51));
+        Bouton1.setBackground(new java.awt.Color(0, 0, 0));
         Bouton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bouton1ActionPerformed(evt);
@@ -109,7 +116,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         });
         jPanel2.add(Bouton1);
 
-        Bouton2.setBackground(new java.awt.Color(51, 51, 51));
+        Bouton2.setBackground(new java.awt.Color(0, 0, 0));
         Bouton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bouton2ActionPerformed(evt);
@@ -117,7 +124,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         });
         jPanel2.add(Bouton2);
 
-        Bouton3.setBackground(new java.awt.Color(51, 51, 51));
+        Bouton3.setBackground(new java.awt.Color(0, 0, 0));
         Bouton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bouton3ActionPerformed(evt);
@@ -125,7 +132,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         });
         jPanel2.add(Bouton3);
 
-        Bouton4.setBackground(new java.awt.Color(51, 51, 51));
+        Bouton4.setBackground(new java.awt.Color(0, 0, 0));
         Bouton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bouton4ActionPerformed(evt);
@@ -133,7 +140,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         });
         jPanel2.add(Bouton4);
 
-        Bouton5.setBackground(new java.awt.Color(51, 51, 51));
+        Bouton5.setBackground(new java.awt.Color(0, 0, 0));
         Bouton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bouton5ActionPerformed(evt);
@@ -141,7 +148,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         });
         jPanel2.add(Bouton5);
 
-        Bouton6.setBackground(new java.awt.Color(51, 51, 51));
+        Bouton6.setBackground(new java.awt.Color(0, 0, 0));
         Bouton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bouton6ActionPerformed(evt);
@@ -149,7 +156,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         });
         jPanel2.add(Bouton6);
 
-        Bouton7.setBackground(new java.awt.Color(51, 51, 51));
+        Bouton7.setBackground(new java.awt.Color(0, 0, 0));
         Bouton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bouton7ActionPerformed(evt);
@@ -157,7 +164,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         });
         jPanel2.add(Bouton7);
 
-        Bouton8.setBackground(new java.awt.Color(51, 51, 51));
+        Bouton8.setBackground(new java.awt.Color(0, 0, 0));
         Bouton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bouton8ActionPerformed(evt);
@@ -165,7 +172,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         });
         jPanel2.add(Bouton8);
 
-        Bouton9.setBackground(new java.awt.Color(51, 51, 51));
+        Bouton9.setBackground(new java.awt.Color(0, 0, 0));
         Bouton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bouton9ActionPerformed(evt);
@@ -173,7 +180,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         });
         jPanel2.add(Bouton9);
 
-        Bouton10.setBackground(new java.awt.Color(51, 51, 51));
+        Bouton10.setBackground(new java.awt.Color(0, 0, 0));
         Bouton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bouton10ActionPerformed(evt);
@@ -181,7 +188,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         });
         jPanel2.add(Bouton10);
 
-        Bouton11.setBackground(new java.awt.Color(51, 51, 51));
+        Bouton11.setBackground(new java.awt.Color(0, 0, 0));
         Bouton11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bouton11ActionPerformed(evt);
@@ -189,7 +196,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         });
         jPanel2.add(Bouton11);
 
-        Bouton12.setBackground(new java.awt.Color(51, 51, 51));
+        Bouton12.setBackground(new java.awt.Color(0, 0, 0));
         Bouton12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bouton12ActionPerformed(evt);
@@ -197,7 +204,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         });
         jPanel2.add(Bouton12);
 
-        Bouton13.setBackground(new java.awt.Color(51, 51, 51));
+        Bouton13.setBackground(new java.awt.Color(0, 0, 0));
         Bouton13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bouton13ActionPerformed(evt);
@@ -205,7 +212,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         });
         jPanel2.add(Bouton13);
 
-        Bouton14.setBackground(new java.awt.Color(51, 51, 51));
+        Bouton14.setBackground(new java.awt.Color(0, 0, 0));
         Bouton14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bouton14ActionPerformed(evt);
@@ -213,7 +220,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         });
         jPanel2.add(Bouton14);
 
-        Bouton15.setBackground(new java.awt.Color(51, 51, 51));
+        Bouton15.setBackground(new java.awt.Color(0, 0, 0));
         Bouton15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bouton15ActionPerformed(evt);
@@ -221,7 +228,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         });
         jPanel2.add(Bouton15);
 
-        Bouton16.setBackground(new java.awt.Color(51, 51, 51));
+        Bouton16.setBackground(new java.awt.Color(0, 0, 0));
         Bouton16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bouton16ActionPerformed(evt);
@@ -229,7 +236,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         });
         jPanel2.add(Bouton16);
 
-        Bouton17.setBackground(new java.awt.Color(51, 51, 51));
+        Bouton17.setBackground(new java.awt.Color(0, 0, 0));
         Bouton17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bouton17ActionPerformed(evt);
@@ -237,7 +244,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         });
         jPanel2.add(Bouton17);
 
-        Bouton18.setBackground(new java.awt.Color(51, 51, 51));
+        Bouton18.setBackground(new java.awt.Color(0, 0, 0));
         Bouton18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bouton18ActionPerformed(evt);
@@ -245,7 +252,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         });
         jPanel2.add(Bouton18);
 
-        Bouton19.setBackground(new java.awt.Color(51, 51, 51));
+        Bouton19.setBackground(new java.awt.Color(0, 0, 0));
         Bouton19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bouton19ActionPerformed(evt);
@@ -253,7 +260,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         });
         jPanel2.add(Bouton19);
 
-        Bouton20.setBackground(new java.awt.Color(51, 51, 51));
+        Bouton20.setBackground(new java.awt.Color(0, 0, 0));
         Bouton20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bouton20ActionPerformed(evt);
@@ -261,7 +268,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         });
         jPanel2.add(Bouton20);
 
-        Bouton21.setBackground(new java.awt.Color(51, 51, 51));
+        Bouton21.setBackground(new java.awt.Color(0, 0, 0));
         Bouton21.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bouton21ActionPerformed(evt);
@@ -269,7 +276,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         });
         jPanel2.add(Bouton21);
 
-        Bouton22.setBackground(new java.awt.Color(51, 51, 51));
+        Bouton22.setBackground(new java.awt.Color(0, 0, 0));
         Bouton22.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bouton22ActionPerformed(evt);
@@ -277,7 +284,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         });
         jPanel2.add(Bouton22);
 
-        Bouton23.setBackground(new java.awt.Color(51, 51, 51));
+        Bouton23.setBackground(new java.awt.Color(0, 0, 0));
         Bouton23.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bouton23ActionPerformed(evt);
@@ -285,7 +292,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         });
         jPanel2.add(Bouton23);
 
-        Bouton24.setBackground(new java.awt.Color(51, 51, 51));
+        Bouton24.setBackground(new java.awt.Color(0, 0, 0));
         Bouton24.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bouton24ActionPerformed(evt);
@@ -293,7 +300,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         });
         jPanel2.add(Bouton24);
 
-        Bouton25.setBackground(new java.awt.Color(51, 51, 51));
+        Bouton25.setBackground(new java.awt.Color(0, 0, 0));
         Bouton25.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bouton25ActionPerformed(evt);
@@ -301,50 +308,78 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         });
         jPanel2.add(Bouton25);
 
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(573, 216, 500, 488));
+
+        Bouton_lvl1.setBackground(new java.awt.Color(255, 255, 51));
+        Bouton_lvl1.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
         Bouton_lvl1.setText("Niveau 1");
         Bouton_lvl1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bouton_lvl1ActionPerformed(evt);
             }
         });
+        jPanel1.add(Bouton_lvl1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1162, 216, -1, -1));
 
+        Bouton_lvl2.setBackground(new java.awt.Color(255, 255, 0));
+        Bouton_lvl2.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
         Bouton_lvl2.setText("Niveau 2");
         Bouton_lvl2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bouton_lvl2ActionPerformed(evt);
             }
         });
+        jPanel1.add(Bouton_lvl2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1162, 326, -1, -1));
 
+        Bouton_lvl3.setBackground(new java.awt.Color(255, 255, 0));
+        Bouton_lvl3.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
         Bouton_lvl3.setText("Niveau 3");
         Bouton_lvl3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bouton_lvl3ActionPerformed(evt);
             }
         });
+        jPanel1.add(Bouton_lvl3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1162, 447, -1, -1));
 
+        Bouton_lvl4.setBackground(new java.awt.Color(255, 255, 0));
+        Bouton_lvl4.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
         Bouton_lvl4.setText("Niveau 4");
         Bouton_lvl4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bouton_lvl4ActionPerformed(evt);
             }
         });
+        jPanel1.add(Bouton_lvl4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1162, 560, -1, -1));
 
+        Bouton_lvl5.setBackground(new java.awt.Color(255, 255, 0));
+        Bouton_lvl5.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
         Bouton_lvl5.setText("Niveau 5");
         Bouton_lvl5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bouton_lvl5ActionPerformed(evt);
             }
         });
+        jPanel1.add(Bouton_lvl5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1162, 677, -1, -1));
 
+        Bouton_Alea.setBackground(new java.awt.Color(255, 255, 0));
+        Bouton_Alea.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
         Bouton_Alea.setText("Aleatoire");
         Bouton_Alea.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bouton_AleaActionPerformed(evt);
             }
         });
+        jPanel1.add(Bouton_Alea, new org.netbeans.lib.awtextra.AbsoluteConstraints(255, 677, -1, -1));
 
+        Score.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
+        Score.setForeground(new java.awt.Color(255, 255, 0));
+        jPanel1.add(Score, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 280, 40, 28));
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI Light", 0, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 0));
         jLabel1.setText("Compteur de coups :");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(204, 216, 229, -1));
 
+        Bouton_Solution.setBackground(new java.awt.Color(255, 255, 0));
         Bouton_Solution.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         Bouton_Solution.setText("Solutions");
         Bouton_Solution.addActionListener(new java.awt.event.ActionListener() {
@@ -352,484 +387,21 @@ public class InterfaceGraphique extends javax.swing.JFrame {
                 Bouton_SolutionActionPerformed(evt);
             }
         });
+        jPanel1.add(Bouton_Solution, new org.netbeans.lib.awtextra.AbsoluteConstraints(204, 359, 229, 119));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(76, 76, 76)
-                        .addComponent(Score, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(64, 64, 64)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(53, 53, 53)
-                        .addComponent(Bouton_Solution, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(110, 110, 110)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Bouton_lvl2)
-                    .addComponent(Bouton_lvl1)
-                    .addComponent(Bouton_lvl3)
-                    .addComponent(Bouton_lvl4)
-                    .addComponent(Bouton_lvl5)
-                    .addComponent(Bouton_Alea))
-                .addGap(179, 179, 179))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(165, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(Bouton_lvl1)
-                        .addGap(66, 66, 66)
-                        .addComponent(Bouton_lvl2)
-                        .addGap(58, 58, 58)
-                        .addComponent(Bouton_lvl3)
-                        .addGap(50, 50, 50)
-                        .addComponent(Bouton_lvl4)
-                        .addGap(57, 57, 57)
-                        .addComponent(Bouton_lvl5)
-                        .addGap(49, 49, 49)
-                        .addComponent(Bouton_Alea))
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 488, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(135, 135, 135))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(181, 181, 181)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Score)
-                .addGap(131, 131, 131)
-                .addComponent(Bouton_Solution, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        jLabel2.setFont(new java.awt.Font("SimSun-ExtB", 0, 48)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel2.setText("Light off");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 110, 250, 67));
 
-        getContentPane().add(jPanel1);
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/c429b3e678cec866a504b9a327901d69.jpg"))); // NOI18N
+        jLabel3.setText("jLabel3");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-320, -630, 5230, 2900));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1660, 940));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void Bouton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton1ActionPerformed
-        // TODO add your handling code here:
-        changerCouleurBouton(Bouton1);
-        changerCouleurBouton(Bouton2);
-        changerCouleurBouton(Bouton6);
-        Bouton1.setText("");
-        cpt ++;
-        Score.setText(cpt + "");
-        Victoire();
-    }//GEN-LAST:event_Bouton1ActionPerformed
-
-    private void Bouton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton2ActionPerformed
-        // TODO add your handling code here:
-        changerCouleurBouton(Bouton1);
-        changerCouleurBouton(Bouton2);
-        changerCouleurBouton(Bouton3);
-        changerCouleurBouton(Bouton7);
-        Bouton2.setText("");
-        cpt ++;
-        Score.setText(cpt + "");
-        Victoire();
-    }//GEN-LAST:event_Bouton2ActionPerformed
-
-    private void Bouton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton3ActionPerformed
-        // TODO add your handling code here:
-        changerCouleurBouton(Bouton2);
-        changerCouleurBouton(Bouton3);
-        changerCouleurBouton(Bouton4);
-        changerCouleurBouton(Bouton8);
-        Bouton3.setText("");
-        cpt ++;
-        Score.setText(cpt + "");
-        Victoire();
-    }//GEN-LAST:event_Bouton3ActionPerformed
-
-    private void Bouton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton4ActionPerformed
-        // TODO add your handling code here:
-        changerCouleurBouton(Bouton3);
-        changerCouleurBouton(Bouton4);
-        changerCouleurBouton(Bouton5);
-        changerCouleurBouton(Bouton9);
-        Bouton4.setText("");
-        cpt ++;
-        Score.setText(cpt + "");
-        Victoire();
-    }//GEN-LAST:event_Bouton4ActionPerformed
-
-    private void Bouton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton5ActionPerformed
-        // TODO add your handling code here:
-        changerCouleurBouton(Bouton4);
-        changerCouleurBouton(Bouton5);
-        changerCouleurBouton(Bouton10);
-        Bouton5.setText("");
-        cpt ++;
-        Score.setText(cpt + "");
-        Victoire();
-    }//GEN-LAST:event_Bouton5ActionPerformed
-
-    private void Bouton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton6ActionPerformed
-        // TODO add your handling code here:
-        changerCouleurBouton(Bouton1);
-        changerCouleurBouton(Bouton6);
-        changerCouleurBouton(Bouton7);
-        changerCouleurBouton(Bouton11);
-        Bouton6.setText("");
-        cpt ++;
-        Score.setText(cpt + "");
-        Victoire();
-    }//GEN-LAST:event_Bouton6ActionPerformed
-
-    private void Bouton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton7ActionPerformed
-        // TODO add your handling code here:
-        changerCouleurBouton(Bouton2);
-        changerCouleurBouton(Bouton6);
-        changerCouleurBouton(Bouton7);
-        changerCouleurBouton(Bouton8);
-        changerCouleurBouton(Bouton12);
-        Bouton7.setText("");
-        cpt ++;
-        Score.setText(cpt + "");
-        Victoire();
-    }//GEN-LAST:event_Bouton7ActionPerformed
-
-    private void Bouton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton8ActionPerformed
-        // TODO add your handling code here:
-        changerCouleurBouton(Bouton7);
-        changerCouleurBouton(Bouton8);
-        changerCouleurBouton(Bouton9);
-        changerCouleurBouton(Bouton3);
-        changerCouleurBouton(Bouton13);
-        Bouton8.setText("");
-        cpt ++;
-        Score.setText(cpt + "");
-        Victoire();
-    }//GEN-LAST:event_Bouton8ActionPerformed
-
-    private void Bouton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton9ActionPerformed
-        // TODO add your handling code here:
-        changerCouleurBouton(Bouton8);
-        changerCouleurBouton(Bouton9);
-        changerCouleurBouton(Bouton10);
-        changerCouleurBouton(Bouton4);
-        changerCouleurBouton(Bouton14);
-        Bouton9.setText("");
-        cpt ++;
-        Score.setText(cpt + "");
-        Victoire();
-    }//GEN-LAST:event_Bouton9ActionPerformed
-
-    private void Bouton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton10ActionPerformed
-        // TODO add your handling code here:
-        changerCouleurBouton(Bouton9);
-        changerCouleurBouton(Bouton10);
-        changerCouleurBouton(Bouton5);
-        changerCouleurBouton(Bouton15);
-        Bouton10.setText("");
-        cpt ++;
-        Score.setText(cpt + "");
-        Victoire();
-    }//GEN-LAST:event_Bouton10ActionPerformed
-
-    private void Bouton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton11ActionPerformed
-        // TODO add your handling code here:
-        changerCouleurBouton(Bouton11);
-        changerCouleurBouton(Bouton12);
-        changerCouleurBouton(Bouton6);
-        changerCouleurBouton(Bouton16);
-        Bouton11.setText("");
-        cpt ++;
-        Score.setText(cpt + "");
-        Victoire();
-    }//GEN-LAST:event_Bouton11ActionPerformed
-
-    private void Bouton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton12ActionPerformed
-        // TODO add your handling code here:
-        changerCouleurBouton(Bouton11);
-        changerCouleurBouton(Bouton12);
-        changerCouleurBouton(Bouton13);
-        changerCouleurBouton(Bouton7);
-        changerCouleurBouton(Bouton17);
-        Bouton12.setText("");
-        cpt ++;
-        Score.setText(cpt + "");
-        Victoire();
-    }//GEN-LAST:event_Bouton12ActionPerformed
-
-    private void Bouton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton13ActionPerformed
-        // TODO add your handling code here:
-        changerCouleurBouton(Bouton12);
-        changerCouleurBouton(Bouton13);
-        changerCouleurBouton(Bouton14);
-        changerCouleurBouton(Bouton8);
-        changerCouleurBouton(Bouton18);
-        Bouton13.setText("");
-        cpt ++;
-        Score.setText(cpt + "");
-        Victoire();
-    }//GEN-LAST:event_Bouton13ActionPerformed
-
-    private void Bouton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton14ActionPerformed
-        // TODO add your handling code here:
-        changerCouleurBouton(Bouton13);
-        changerCouleurBouton(Bouton14);
-        changerCouleurBouton(Bouton15);
-        changerCouleurBouton(Bouton9);
-        changerCouleurBouton(Bouton19);
-        Bouton14.setText("");
-        cpt ++;
-        Score.setText(cpt + "");
-        Victoire();
-    }//GEN-LAST:event_Bouton14ActionPerformed
-
-    private void Bouton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton15ActionPerformed
-        // TODO add your handling code here:
-        changerCouleurBouton(Bouton14);
-        changerCouleurBouton(Bouton15);
-        changerCouleurBouton(Bouton10);
-        changerCouleurBouton(Bouton20);
-        Bouton15.setText("");
-        cpt ++;
-        Score.setText(cpt + "");
-        Victoire();
-    }//GEN-LAST:event_Bouton15ActionPerformed
-
-    private void Bouton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton16ActionPerformed
-        // TODO add your handling code here:
-        changerCouleurBouton(Bouton16);
-        changerCouleurBouton(Bouton17);
-        changerCouleurBouton(Bouton11);
-        changerCouleurBouton(Bouton21);
-        Bouton16.setText("");
-        cpt ++;
-        Score.setText(cpt + "");
-        Victoire();
-    }//GEN-LAST:event_Bouton16ActionPerformed
-
-    private void Bouton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton17ActionPerformed
-        // TODO add your handling code here:
-        changerCouleurBouton(Bouton16);
-        changerCouleurBouton(Bouton17);
-        changerCouleurBouton(Bouton18);
-        changerCouleurBouton(Bouton12);
-        changerCouleurBouton(Bouton22);
-        Bouton17.setText("");
-        cpt ++;
-        Score.setText(cpt + "");
-        Victoire();
-    }//GEN-LAST:event_Bouton17ActionPerformed
-
-    private void Bouton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton18ActionPerformed
-        // TODO add your handling code here:
-        changerCouleurBouton(Bouton17);
-        changerCouleurBouton(Bouton18);
-        changerCouleurBouton(Bouton19);
-        changerCouleurBouton(Bouton13);
-        changerCouleurBouton(Bouton23);
-        Bouton18.setText("");
-        cpt ++;
-        Score.setText(cpt + "");
-        Victoire();
-    }//GEN-LAST:event_Bouton18ActionPerformed
-
-    private void Bouton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton19ActionPerformed
-        // TODO add your handling code here:
-        changerCouleurBouton(Bouton18);
-        changerCouleurBouton(Bouton19);
-        changerCouleurBouton(Bouton20);
-        changerCouleurBouton(Bouton14);
-        changerCouleurBouton(Bouton24);
-        Bouton19.setText("");
-        cpt ++;
-        Score.setText(cpt + "");
-        Victoire();
-    }//GEN-LAST:event_Bouton19ActionPerformed
-
-    private void Bouton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton20ActionPerformed
-        // TODO add your handling code here:
-        changerCouleurBouton(Bouton19);
-        changerCouleurBouton(Bouton20);
-        changerCouleurBouton(Bouton15);
-        changerCouleurBouton(Bouton25);
-        Bouton20.setText("");
-        cpt ++;
-        Score.setText(cpt + "");
-        Victoire();
-    }//GEN-LAST:event_Bouton20ActionPerformed
-
-    private void Bouton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton21ActionPerformed
-        // TODO add your handling code here:
-        changerCouleurBouton(Bouton21);
-        changerCouleurBouton(Bouton22);
-        changerCouleurBouton(Bouton16);
-        Bouton21.setText("");
-        cpt ++;
-        Score.setText(cpt + "");
-        Victoire();
-    }//GEN-LAST:event_Bouton21ActionPerformed
-
-    private void Bouton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton22ActionPerformed
-        // TODO add your handling code here:
-        changerCouleurBouton(Bouton21);
-        changerCouleurBouton(Bouton22);
-        changerCouleurBouton(Bouton23);
-        changerCouleurBouton(Bouton17);
-        Bouton22.setText("");
-        cpt ++;
-        Score.setText(cpt + "");
-        Victoire();
-    }//GEN-LAST:event_Bouton22ActionPerformed
-
-    private void Bouton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton23ActionPerformed
-        // TODO add your handling code here:
-        changerCouleurBouton(Bouton22);
-        changerCouleurBouton(Bouton23);
-        changerCouleurBouton(Bouton24);
-        changerCouleurBouton(Bouton18);
-        Bouton23.setText("");
-        cpt ++;
-        Score.setText(cpt + "");
-        Victoire();
-    }//GEN-LAST:event_Bouton23ActionPerformed
-
-    private void Bouton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton24ActionPerformed
-        // TODO add your handling code here:
-        changerCouleurBouton(Bouton23);
-        changerCouleurBouton(Bouton24);
-        changerCouleurBouton(Bouton25);
-        changerCouleurBouton(Bouton19);
-        Bouton24.setText("");
-        cpt ++;
-        Score.setText(cpt + "");
-        Victoire();
-    }//GEN-LAST:event_Bouton24ActionPerformed
-
-    private void Bouton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton25ActionPerformed
-        // TODO add your handling code here:
-        changerCouleurBouton(Bouton24);
-        changerCouleurBouton(Bouton25);
-        changerCouleurBouton(Bouton20);
-        Bouton25.setText("");
-        cpt ++;
-        Score.setText(cpt + "");
-        Victoire();
-    }//GEN-LAST:event_Bouton25ActionPerformed
-
-    private void Bouton_lvl1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton_lvl1ActionPerformed
-        // TODO add your handling code here:
-        rebootBoutons();
-        nettoyerBoutons();
-        Bouton_Solution.setEnabled(true);
-        Bouton1.setBackground(Color.CYAN);
-        Bouton2.setBackground(Color.CYAN);
-        Bouton6.setBackground(Color.CYAN);
-        Bouton4.setBackground(Color.CYAN);
-        Bouton5.setBackground(Color.CYAN);
-        Bouton10.setBackground(Color.CYAN);
-        Bouton16.setBackground(Color.CYAN);
-        Bouton22.setBackground(Color.CYAN);
-        Bouton21.setBackground(Color.CYAN);
-        Bouton20.setBackground(Color.CYAN);
-        Bouton25.setBackground(Color.CYAN);
-        Bouton24.setBackground(Color.CYAN);
-        
-        lvl = 1;
-    }//GEN-LAST:event_Bouton_lvl1ActionPerformed
-
-    private void Bouton_lvl2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton_lvl2ActionPerformed
-        // TODO add your handling code here:
-        rebootBoutons();
-        nettoyerBoutons();
-        Bouton_Solution.setEnabled(true);
-        Bouton1.setBackground(Color.CYAN);
-        Bouton4.setBackground(Color.CYAN);
-        Bouton5.setBackground(Color.CYAN);
-        Bouton7.setBackground(Color.CYAN);
-        Bouton8.setBackground(Color.CYAN);
-        Bouton15.setBackground(Color.CYAN);
-        Bouton17.setBackground(Color.CYAN);
-        Bouton18.setBackground(Color.CYAN);
-        Bouton20.setBackground(Color.CYAN);
-        Bouton22.setBackground(Color.CYAN);
-        Bouton25.setBackground(Color.CYAN);
-        lvl = 2;
-        
-    }//GEN-LAST:event_Bouton_lvl2ActionPerformed
-
-    private void Bouton_lvl3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton_lvl3ActionPerformed
-        // TODO add your handling code here:
-        rebootBoutons();
-        nettoyerBoutons();
-        Bouton_Solution.setEnabled(true);
-        Bouton2.setBackground(Color.CYAN);
-        Bouton3.setBackground(Color.CYAN);
-        Bouton4.setBackground(Color.CYAN);
-        Bouton6.setBackground(Color.CYAN);
-        Bouton11.setBackground(Color.CYAN);
-        Bouton12.setBackground(Color.CYAN);
-        Bouton13.setBackground(Color.CYAN);
-        Bouton15.setBackground(Color.CYAN);
-        Bouton19.setBackground(Color.CYAN);
-        Bouton23.setBackground(Color.CYAN);
-        Bouton25.setBackground(Color.CYAN);
-        lvl = 3;
-        
-    }//GEN-LAST:event_Bouton_lvl3ActionPerformed
-
-    private void Bouton_lvl4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton_lvl4ActionPerformed
-        // TODO add your handling code here:
-        rebootBoutons();
-        nettoyerBoutons();
-        Bouton_Solution.setEnabled(true);
-        Bouton1.setBackground(Color.CYAN);
-        Bouton2.setBackground(Color.CYAN);
-        Bouton3.setBackground(Color.CYAN);
-        Bouton6.setBackground(Color.CYAN);
-        Bouton7.setBackground(Color.CYAN);
-        Bouton8.setBackground(Color.CYAN);
-        Bouton9.setBackground(Color.CYAN);
-        Bouton10.setBackground(Color.CYAN);
-        Bouton12.setBackground(Color.CYAN);
-        Bouton13.setBackground(Color.CYAN);
-        Bouton14.setBackground(Color.CYAN);
-        Bouton17.setBackground(Color.CYAN);
-        Bouton18.setBackground(Color.CYAN);
-        Bouton20.setBackground(Color.CYAN);
-        Bouton22.setBackground(Color.CYAN);
-        Bouton23.setBackground(Color.CYAN);
-        Bouton24.setBackground(Color.CYAN);
-        lvl = 4;
-    }//GEN-LAST:event_Bouton_lvl4ActionPerformed
-
-    private void Bouton_lvl5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton_lvl5ActionPerformed
-        // TODO add your handling code here:
-        rebootBoutons();
-        nettoyerBoutons();
-        Bouton_Solution.setEnabled(true);
-        Bouton1.setBackground(Color.CYAN);
-        Bouton2.setBackground(Color.CYAN);
-        Bouton3.setBackground(Color.CYAN);
-        Bouton5.setBackground(Color.CYAN);
-        Bouton6.setBackground(Color.CYAN);
-        Bouton7.setBackground(Color.CYAN);
-        Bouton8.setBackground(Color.CYAN);
-        Bouton9.setBackground(Color.CYAN);
-        Bouton11.setBackground(Color.CYAN);
-        Bouton12.setBackground(Color.CYAN);
-        Bouton13.setBackground(Color.CYAN);
-        Bouton14.setBackground(Color.CYAN);
-        Bouton16.setBackground(Color.CYAN);
-        Bouton19.setBackground(Color.CYAN);
-        Bouton20.setBackground(Color.CYAN);
-        Bouton22.setBackground(Color.CYAN);
-        Bouton23.setBackground(Color.CYAN);
-        Bouton24.setBackground(Color.CYAN);
-        lvl = 5;
-    }//GEN-LAST:event_Bouton_lvl5ActionPerformed
 
     private void Bouton_SolutionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton_SolutionActionPerformed
         // TODO add your handling code here:
@@ -854,7 +426,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
             Bouton22.setText("X");
             Bouton24.setText("X");
             Bouton_Solution.setEnabled(false);
-            
+
         }
         if (lvl == 3) {
             Bouton7.setText("X");
@@ -868,7 +440,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
             Bouton19.setText("X");
             Bouton22.setText("X");
             Bouton24.setText("X");
-            
+
         }
         if (lvl == 4) {
             Bouton5.setText("X");
@@ -908,83 +480,500 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         int f = (int)( 1 + Math.random()* 26);
         int g = (int)( 1 + Math.random()* 26);
         int h = (int)( 1 + Math.random()* 26);
-        
+
         if (a == 1 || b == 1 || c == 1 || d == 1 || e == 1 || f == 1 || g == 1 || h == 1) {
-            Bouton1.setBackground(Color.CYAN);
+            Bouton1.setBackground(Color.YELLOW);
         }
         if (a == 2 || b == 2 || c == 2 || d == 2 || e == 2 || f == 2 || g == 2 || h == 2) {
-            Bouton2.setBackground(Color.CYAN);
+            Bouton2.setBackground(Color.YELLOW);
         }
         if (a == 3 || b == 3 || c == 3 || d == 3 || e == 3 || f == 3 || g == 3 || h == 3) {
-            Bouton3.setBackground(Color.CYAN);
+            Bouton3.setBackground(Color.YELLOW);
         }
         if (a == 4 || b == 4 || c == 4 || d == 4 || e == 4 || f == 4 || g == 4 || h == 4) {
-            Bouton4.setBackground(Color.CYAN);
+            Bouton4.setBackground(Color.YELLOW);
         }
         if (a == 5 || b == 5 || c == 5 || d == 5 || e == 5 || f == 5 || g == 5 || h == 5) {
-            Bouton5.setBackground(Color.CYAN);
+            Bouton5.setBackground(Color.YELLOW);
         }
         if (a == 6 || b == 6 || c == 6 || d == 6 || e == 6 || f == 6 || g == 6 || h == 6) {
-            Bouton6.setBackground(Color.CYAN);
+            Bouton6.setBackground(Color.YELLOW);
         }
         if (a == 7 || b == 7 || c == 7 || d == 7 || e == 7 || f == 7 || g == 7 || h == 7) {
-            Bouton7.setBackground(Color.CYAN);
+            Bouton7.setBackground(Color.YELLOW);
         }
         if (a == 8 || b == 8 || c == 8 || d == 8 || e == 8 || f == 8 || g == 8 || h == 8) {
-            Bouton8.setBackground(Color.CYAN);
+            Bouton8.setBackground(Color.YELLOW);
         }
         if (a == 9 || b == 9|| c == 9 || d == 9 || e ==  9 || f == 9 || g == 9 || h == 9) {
-            Bouton9.setBackground(Color.CYAN);
+            Bouton9.setBackground(Color.YELLOW);
         }
         if (a == 11 || b == 11 || c == 11 || d == 11 || e == 11 || f == 11 || g == 11 || h == 11) {
-            Bouton11.setBackground(Color.CYAN);
+            Bouton11.setBackground(Color.YELLOW);
         }
         if (a == 12 || b == 12 || c == 12 || d == 12 || e == 12 || f == 12 || g == 12 || h == 12) {
-            Bouton12.setBackground(Color.CYAN);
+            Bouton12.setBackground(Color.YELLOW);
         }
         if (a == 13 || b == 13 || c == 13 || d == 13 || e == 13 || f == 13 || g == 13 || h == 13) {
-            Bouton13.setBackground(Color.CYAN);
+            Bouton13.setBackground(Color.YELLOW);
         }
         if (a == 14 || b == 14 || c == 14 || d == 14 || e == 14 || f == 14 || g == 14 || h == 14) {
-            Bouton14.setBackground(Color.CYAN);
+            Bouton14.setBackground(Color.YELLOW);
         }
         if (a == 15 || b == 15 || c == 15 || d == 15 || e == 15 || f == 15 || g == 15 || h == 15) {
-            Bouton15.setBackground(Color.CYAN);
+            Bouton15.setBackground(Color.YELLOW);
         }
         if (a == 16 || b == 16 || c == 16 || d == 16 || e == 16 || f == 16 || g == 16 || h == 16) {
-            Bouton16.setBackground(Color.CYAN);
+            Bouton16.setBackground(Color.YELLOW);
         }
         if (a == 17 || b == 17 || c == 17 || d == 17 || e == 17 || f == 17 || g == 17 || h == 17) {
-            Bouton17.setBackground(Color.CYAN);
+            Bouton17.setBackground(Color.YELLOW);
         }
         if (a == 18 || b == 18 || c == 18 || d == 18 || e == 18 || f == 18 || g == 18 || h == 18) {
-            Bouton18.setBackground(Color.CYAN);
+            Bouton18.setBackground(Color.YELLOW);
         }
         if (a == 19 || b == 19 || c == 19 || d == 19 || e == 19 || f == 19 || g == 19 || h == 19) {
-            Bouton19.setBackground(Color.CYAN);
+            Bouton19.setBackground(Color.YELLOW);
         }
         if (a == 20 || b == 20 || c == 20 || d == 20 || e == 20 || f == 20 || g == 20 || h == 20) {
-            Bouton20.setBackground(Color.CYAN);
+            Bouton20.setBackground(Color.YELLOW);
         }
         if (a == 21 || b == 21 || c == 21 || d == 21 || e == 21 || f == 21 || g == 21 || h == 21) {
-            Bouton21.setBackground(Color.CYAN);
+            Bouton21.setBackground(Color.YELLOW);
         }
         if (a == 22 || b == 22 || c == 22 || d == 22 || e == 22 || f == 22 || g == 22 || h == 22) {
-            Bouton22.setBackground(Color.CYAN);
+            Bouton22.setBackground(Color.YELLOW);
         }
         if (a == 23 || b == 23 || c == 23 || d == 23 || e == 23 || f == 23 || g == 23 || h == 23) {
-            Bouton23.setBackground(Color.CYAN);
+            Bouton23.setBackground(Color.YELLOW);
         }
         if (a == 24 || b == 24 || c == 24 || d == 24 || e == 24 || f == 24 || g == 24 || h == 24) {
-            Bouton24.setBackground(Color.CYAN);
+            Bouton24.setBackground(Color.YELLOW);
         }
         if (a == 25 || b == 25 || c == 25 || d == 25 || e == 25 || f == 25 || g == 25 || h == 25) {
-            Bouton25.setBackground(Color.CYAN);
+            Bouton25.setBackground(Color.YELLOW);
         }
         if (a == 1 || b == 1 || c == 1 || d == 1 || e == 1 || f == 1 || g == 1 || h ==1) {
-            Bouton1.setBackground(Color.CYAN);
+            Bouton1.setBackground(Color.YELLOW);
         }
     }//GEN-LAST:event_Bouton_AleaActionPerformed
+
+    private void Bouton_lvl5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton_lvl5ActionPerformed
+        // TODO add your handling code here:
+        rebootBoutons();
+        nettoyerBoutons();
+        Bouton_Solution.setEnabled(true);
+        Bouton1.setBackground(Color.YELLOW);
+        Bouton2.setBackground(Color.YELLOW);
+        Bouton3.setBackground(Color.YELLOW);
+        Bouton5.setBackground(Color.YELLOW);
+        Bouton6.setBackground(Color.YELLOW);
+        Bouton7.setBackground(Color.YELLOW);
+        Bouton8.setBackground(Color.YELLOW);
+        Bouton9.setBackground(Color.YELLOW);
+        Bouton11.setBackground(Color.YELLOW);
+        Bouton12.setBackground(Color.YELLOW);
+        Bouton13.setBackground(Color.YELLOW);
+        Bouton14.setBackground(Color.YELLOW);
+        Bouton16.setBackground(Color.YELLOW);
+        Bouton19.setBackground(Color.YELLOW);
+        Bouton20.setBackground(Color.YELLOW);
+        Bouton22.setBackground(Color.YELLOW);
+        Bouton23.setBackground(Color.YELLOW);
+        Bouton24.setBackground(Color.YELLOW);
+        lvl = 5;
+    }//GEN-LAST:event_Bouton_lvl5ActionPerformed
+
+    private void Bouton_lvl4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton_lvl4ActionPerformed
+        // TODO add your handling code here:
+        rebootBoutons();
+        nettoyerBoutons();
+        Bouton_Solution.setEnabled(true);
+        Bouton1.setBackground(Color.YELLOW);
+        Bouton2.setBackground(Color.YELLOW);
+        Bouton3.setBackground(Color.YELLOW);
+        Bouton6.setBackground(Color.YELLOW);
+        Bouton7.setBackground(Color.YELLOW);
+        Bouton8.setBackground(Color.YELLOW);
+        Bouton9.setBackground(Color.YELLOW);
+        Bouton10.setBackground(Color.YELLOW);
+        Bouton12.setBackground(Color.YELLOW);
+        Bouton13.setBackground(Color.YELLOW);
+        Bouton14.setBackground(Color.YELLOW);
+        Bouton17.setBackground(Color.YELLOW);
+        Bouton18.setBackground(Color.YELLOW);
+        Bouton20.setBackground(Color.YELLOW);
+        Bouton22.setBackground(Color.YELLOW);
+        Bouton23.setBackground(Color.YELLOW);
+        Bouton24.setBackground(Color.YELLOW);
+        lvl = 4;
+    }//GEN-LAST:event_Bouton_lvl4ActionPerformed
+
+    private void Bouton_lvl3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton_lvl3ActionPerformed
+        // TODO add your handling code here:
+        rebootBoutons();
+        nettoyerBoutons();
+        Bouton_Solution.setEnabled(true);
+        Bouton2.setBackground(Color.YELLOW);
+        Bouton3.setBackground(Color.YELLOW);
+        Bouton4.setBackground(Color.YELLOW);
+        Bouton6.setBackground(Color.YELLOW);
+        Bouton11.setBackground(Color.YELLOW);
+        Bouton12.setBackground(Color.YELLOW);
+        Bouton13.setBackground(Color.YELLOW);
+        Bouton15.setBackground(Color.YELLOW);
+        Bouton19.setBackground(Color.YELLOW);
+        Bouton23.setBackground(Color.YELLOW);
+        Bouton25.setBackground(Color.YELLOW);
+        lvl = 3;
+
+    }//GEN-LAST:event_Bouton_lvl3ActionPerformed
+
+    private void Bouton_lvl2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton_lvl2ActionPerformed
+        // TODO add your handling code here:
+        rebootBoutons();
+        nettoyerBoutons();
+        Bouton_Solution.setEnabled(true);
+        Bouton1.setBackground(Color.YELLOW);
+        Bouton4.setBackground(Color.YELLOW);
+        Bouton5.setBackground(Color.YELLOW);
+        Bouton7.setBackground(Color.YELLOW);
+        Bouton8.setBackground(Color.YELLOW);
+        Bouton15.setBackground(Color.YELLOW);
+        Bouton17.setBackground(Color.YELLOW);
+        Bouton18.setBackground(Color.YELLOW);
+        Bouton20.setBackground(Color.YELLOW);
+        Bouton22.setBackground(Color.YELLOW);
+        Bouton25.setBackground(Color.YELLOW);
+        lvl = 2;
+
+    }//GEN-LAST:event_Bouton_lvl2ActionPerformed
+
+    private void Bouton_lvl1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton_lvl1ActionPerformed
+        // TODO add your handling code here:
+        rebootBoutons();
+        nettoyerBoutons();
+        Bouton_Solution.setEnabled(true);
+        Bouton1.setBackground(Color.YELLOW);
+        Bouton2.setBackground(Color.YELLOW);
+        Bouton6.setBackground(Color.YELLOW);
+        Bouton4.setBackground(Color.YELLOW);
+        Bouton5.setBackground(Color.YELLOW);
+        Bouton10.setBackground(Color.YELLOW);
+        Bouton16.setBackground(Color.YELLOW);
+        Bouton22.setBackground(Color.YELLOW);
+        Bouton21.setBackground(Color.YELLOW);
+        Bouton20.setBackground(Color.YELLOW);
+        Bouton25.setBackground(Color.YELLOW);
+        Bouton24.setBackground(Color.YELLOW);
+
+        lvl = 1;
+    }//GEN-LAST:event_Bouton_lvl1ActionPerformed
+
+    private void Bouton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton25ActionPerformed
+        // TODO add your handling code here:
+        changerCouleurBouton(Bouton24);
+        changerCouleurBouton(Bouton25);
+        changerCouleurBouton(Bouton20);
+        Bouton25.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
+    }//GEN-LAST:event_Bouton25ActionPerformed
+
+    private void Bouton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton24ActionPerformed
+        // TODO add your handling code here:
+        changerCouleurBouton(Bouton23);
+        changerCouleurBouton(Bouton24);
+        changerCouleurBouton(Bouton25);
+        changerCouleurBouton(Bouton19);
+        Bouton24.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
+    }//GEN-LAST:event_Bouton24ActionPerformed
+
+    private void Bouton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton23ActionPerformed
+        // TODO add your handling code here:
+        changerCouleurBouton(Bouton22);
+        changerCouleurBouton(Bouton23);
+        changerCouleurBouton(Bouton24);
+        changerCouleurBouton(Bouton18);
+        Bouton23.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
+    }//GEN-LAST:event_Bouton23ActionPerformed
+
+    private void Bouton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton22ActionPerformed
+        // TODO add your handling code here:
+        changerCouleurBouton(Bouton21);
+        changerCouleurBouton(Bouton22);
+        changerCouleurBouton(Bouton23);
+        changerCouleurBouton(Bouton17);
+        Bouton22.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
+    }//GEN-LAST:event_Bouton22ActionPerformed
+
+    private void Bouton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton21ActionPerformed
+        // TODO add your handling code here:
+        changerCouleurBouton(Bouton21);
+        changerCouleurBouton(Bouton22);
+        changerCouleurBouton(Bouton16);
+        Bouton21.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
+    }//GEN-LAST:event_Bouton21ActionPerformed
+
+    private void Bouton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton20ActionPerformed
+        // TODO add your handling code here:
+        changerCouleurBouton(Bouton19);
+        changerCouleurBouton(Bouton20);
+        changerCouleurBouton(Bouton15);
+        changerCouleurBouton(Bouton25);
+        Bouton20.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
+    }//GEN-LAST:event_Bouton20ActionPerformed
+
+    private void Bouton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton19ActionPerformed
+        // TODO add your handling code here:
+        changerCouleurBouton(Bouton18);
+        changerCouleurBouton(Bouton19);
+        changerCouleurBouton(Bouton20);
+        changerCouleurBouton(Bouton14);
+        changerCouleurBouton(Bouton24);
+        Bouton19.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
+    }//GEN-LAST:event_Bouton19ActionPerformed
+
+    private void Bouton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton18ActionPerformed
+        // TODO add your handling code here:
+        changerCouleurBouton(Bouton17);
+        changerCouleurBouton(Bouton18);
+        changerCouleurBouton(Bouton19);
+        changerCouleurBouton(Bouton13);
+        changerCouleurBouton(Bouton23);
+        Bouton18.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
+    }//GEN-LAST:event_Bouton18ActionPerformed
+
+    private void Bouton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton17ActionPerformed
+        // TODO add your handling code here:
+        changerCouleurBouton(Bouton16);
+        changerCouleurBouton(Bouton17);
+        changerCouleurBouton(Bouton18);
+        changerCouleurBouton(Bouton12);
+        changerCouleurBouton(Bouton22);
+        Bouton17.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
+    }//GEN-LAST:event_Bouton17ActionPerformed
+
+    private void Bouton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton16ActionPerformed
+        // TODO add your handling code here:
+        changerCouleurBouton(Bouton16);
+        changerCouleurBouton(Bouton17);
+        changerCouleurBouton(Bouton11);
+        changerCouleurBouton(Bouton21);
+        Bouton16.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
+    }//GEN-LAST:event_Bouton16ActionPerformed
+
+    private void Bouton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton15ActionPerformed
+        // TODO add your handling code here:
+        changerCouleurBouton(Bouton14);
+        changerCouleurBouton(Bouton15);
+        changerCouleurBouton(Bouton10);
+        changerCouleurBouton(Bouton20);
+        Bouton15.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
+    }//GEN-LAST:event_Bouton15ActionPerformed
+
+    private void Bouton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton14ActionPerformed
+        // TODO add your handling code here:
+        changerCouleurBouton(Bouton13);
+        changerCouleurBouton(Bouton14);
+        changerCouleurBouton(Bouton15);
+        changerCouleurBouton(Bouton9);
+        changerCouleurBouton(Bouton19);
+        Bouton14.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
+    }//GEN-LAST:event_Bouton14ActionPerformed
+
+    private void Bouton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton13ActionPerformed
+        // TODO add your handling code here:
+        changerCouleurBouton(Bouton12);
+        changerCouleurBouton(Bouton13);
+        changerCouleurBouton(Bouton14);
+        changerCouleurBouton(Bouton8);
+        changerCouleurBouton(Bouton18);
+        Bouton13.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
+    }//GEN-LAST:event_Bouton13ActionPerformed
+
+    private void Bouton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton12ActionPerformed
+        // TODO add your handling code here:
+        changerCouleurBouton(Bouton11);
+        changerCouleurBouton(Bouton12);
+        changerCouleurBouton(Bouton13);
+        changerCouleurBouton(Bouton7);
+        changerCouleurBouton(Bouton17);
+        Bouton12.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
+    }//GEN-LAST:event_Bouton12ActionPerformed
+
+    private void Bouton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton11ActionPerformed
+        // TODO add your handling code here:
+        changerCouleurBouton(Bouton11);
+        changerCouleurBouton(Bouton12);
+        changerCouleurBouton(Bouton6);
+        changerCouleurBouton(Bouton16);
+        Bouton11.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
+    }//GEN-LAST:event_Bouton11ActionPerformed
+
+    private void Bouton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton10ActionPerformed
+        // TODO add your handling code here:
+        changerCouleurBouton(Bouton9);
+        changerCouleurBouton(Bouton10);
+        changerCouleurBouton(Bouton5);
+        changerCouleurBouton(Bouton15);
+        Bouton10.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
+    }//GEN-LAST:event_Bouton10ActionPerformed
+
+    private void Bouton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton9ActionPerformed
+        // TODO add your handling code here:
+        changerCouleurBouton(Bouton8);
+        changerCouleurBouton(Bouton9);
+        changerCouleurBouton(Bouton10);
+        changerCouleurBouton(Bouton4);
+        changerCouleurBouton(Bouton14);
+        Bouton9.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
+    }//GEN-LAST:event_Bouton9ActionPerformed
+
+    private void Bouton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton8ActionPerformed
+        // TODO add your handling code here:
+        changerCouleurBouton(Bouton7);
+        changerCouleurBouton(Bouton8);
+        changerCouleurBouton(Bouton9);
+        changerCouleurBouton(Bouton3);
+        changerCouleurBouton(Bouton13);
+        Bouton8.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
+    }//GEN-LAST:event_Bouton8ActionPerformed
+
+    private void Bouton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton7ActionPerformed
+        // TODO add your handling code here:
+        changerCouleurBouton(Bouton2);
+        changerCouleurBouton(Bouton6);
+        changerCouleurBouton(Bouton7);
+        changerCouleurBouton(Bouton8);
+        changerCouleurBouton(Bouton12);
+        Bouton7.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
+    }//GEN-LAST:event_Bouton7ActionPerformed
+
+    private void Bouton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton6ActionPerformed
+        // TODO add your handling code here:
+        changerCouleurBouton(Bouton1);
+        changerCouleurBouton(Bouton6);
+        changerCouleurBouton(Bouton7);
+        changerCouleurBouton(Bouton11);
+        Bouton6.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
+    }//GEN-LAST:event_Bouton6ActionPerformed
+
+    private void Bouton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton5ActionPerformed
+        // TODO add your handling code here:
+        changerCouleurBouton(Bouton4);
+        changerCouleurBouton(Bouton5);
+        changerCouleurBouton(Bouton10);
+        Bouton5.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
+    }//GEN-LAST:event_Bouton5ActionPerformed
+
+    private void Bouton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton4ActionPerformed
+        // TODO add your handling code here:
+        changerCouleurBouton(Bouton3);
+        changerCouleurBouton(Bouton4);
+        changerCouleurBouton(Bouton5);
+        changerCouleurBouton(Bouton9);
+        Bouton4.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
+    }//GEN-LAST:event_Bouton4ActionPerformed
+
+    private void Bouton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton3ActionPerformed
+        // TODO add your handling code here:
+        changerCouleurBouton(Bouton2);
+        changerCouleurBouton(Bouton3);
+        changerCouleurBouton(Bouton4);
+        changerCouleurBouton(Bouton8);
+        Bouton3.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
+    }//GEN-LAST:event_Bouton3ActionPerformed
+
+    private void Bouton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton2ActionPerformed
+        // TODO add your handling code here:
+        changerCouleurBouton(Bouton1);
+        changerCouleurBouton(Bouton2);
+        changerCouleurBouton(Bouton3);
+        changerCouleurBouton(Bouton7);
+        Bouton2.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
+    }//GEN-LAST:event_Bouton2ActionPerformed
+
+    private void Bouton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bouton1ActionPerformed
+        // TODO add your handling code here:
+        changerCouleurBouton(Bouton1);
+        changerCouleurBouton(Bouton2);
+        changerCouleurBouton(Bouton6);
+        Bouton1.setText("");
+        cpt ++;
+        Score.setText(cpt + "");
+        Victoire();
+    }//GEN-LAST:event_Bouton1ActionPerformed
 
     
     public void nettoyerBoutons() {
@@ -1016,36 +1005,36 @@ public class InterfaceGraphique extends javax.swing.JFrame {
     }
     
     public void rebootBoutons() {
-        Bouton1.setBackground(Color.DARK_GRAY);
-        Bouton2.setBackground(Color.DARK_GRAY);
-        Bouton3.setBackground(Color.DARK_GRAY);
-        Bouton4.setBackground(Color.DARK_GRAY);
-        Bouton5.setBackground(Color.DARK_GRAY);
-        Bouton6.setBackground(Color.DARK_GRAY);
-        Bouton7.setBackground(Color.DARK_GRAY);
-        Bouton8.setBackground(Color.DARK_GRAY);
-        Bouton9.setBackground(Color.DARK_GRAY);
-        Bouton10.setBackground(Color.DARK_GRAY);
-        Bouton11.setBackground(Color.DARK_GRAY);
-        Bouton12.setBackground(Color.DARK_GRAY);
-        Bouton13.setBackground(Color.DARK_GRAY);
-        Bouton14.setBackground(Color.DARK_GRAY);
-        Bouton15.setBackground(Color.DARK_GRAY);
-        Bouton16.setBackground(Color.DARK_GRAY);
-        Bouton17.setBackground(Color.DARK_GRAY);
-        Bouton18.setBackground(Color.DARK_GRAY);
-        Bouton19.setBackground(Color.DARK_GRAY);
-        Bouton20.setBackground(Color.DARK_GRAY);
-        Bouton21.setBackground(Color.DARK_GRAY);
-        Bouton22.setBackground(Color.DARK_GRAY);
-        Bouton23.setBackground(Color.DARK_GRAY);
-        Bouton24.setBackground(Color.DARK_GRAY);
-        Bouton25.setBackground(Color.DARK_GRAY);
+        Bouton1.setBackground(Color.BLACK);
+        Bouton2.setBackground(Color.BLACK);
+        Bouton3.setBackground(Color.BLACK);
+        Bouton4.setBackground(Color.BLACK);
+        Bouton5.setBackground(Color.BLACK);
+        Bouton6.setBackground(Color.BLACK);
+        Bouton7.setBackground(Color.BLACK);
+        Bouton8.setBackground(Color.BLACK);
+        Bouton9.setBackground(Color.BLACK);
+        Bouton10.setBackground(Color.BLACK);
+        Bouton11.setBackground(Color.BLACK);
+        Bouton12.setBackground(Color.BLACK);
+        Bouton13.setBackground(Color.BLACK);
+        Bouton14.setBackground(Color.BLACK);
+        Bouton15.setBackground(Color.BLACK);
+        Bouton16.setBackground(Color.BLACK);
+        Bouton17.setBackground(Color.BLACK);
+        Bouton18.setBackground(Color.BLACK);
+        Bouton19.setBackground(Color.BLACK);
+        Bouton20.setBackground(Color.BLACK);
+        Bouton21.setBackground(Color.BLACK);
+        Bouton22.setBackground(Color.BLACK);
+        Bouton23.setBackground(Color.BLACK);
+        Bouton24.setBackground(Color.BLACK);
+        Bouton25.setBackground(Color.BLACK);
     }
     
     
     public void Victoire() {
-        if (Bouton1.getBackground() == Color.DARK_GRAY && Bouton2.getBackground() == Color.DARK_GRAY && Bouton3.getBackground() == Color.DARK_GRAY && Bouton4.getBackground() == Color.DARK_GRAY && Bouton5.getBackground() == Color.DARK_GRAY && Bouton6.getBackground() == Color.DARK_GRAY && Bouton7.getBackground() == Color.DARK_GRAY && Bouton8.getBackground() == Color.DARK_GRAY && Bouton9.getBackground() == Color.DARK_GRAY && Bouton10.getBackground() == Color.DARK_GRAY && Bouton11.getBackground() == Color.DARK_GRAY && Bouton12.getBackground() == Color.DARK_GRAY && Bouton13.getBackground() == Color.DARK_GRAY && Bouton14.getBackground() == Color.DARK_GRAY && Bouton15.getBackground() == Color.DARK_GRAY && Bouton16.getBackground() == Color.DARK_GRAY && Bouton17.getBackground() == Color.DARK_GRAY && Bouton18.getBackground() == Color.DARK_GRAY && Bouton19.getBackground() == Color.DARK_GRAY && Bouton20.getBackground() == Color.DARK_GRAY && Bouton21.getBackground() == Color.DARK_GRAY && Bouton22.getBackground() == Color.DARK_GRAY &&Bouton23.getBackground() == Color.DARK_GRAY && Bouton24.getBackground() == Color.DARK_GRAY && Bouton25.getBackground() == Color.DARK_GRAY) {
+        if (Bouton1.getBackground() == Color.BLACK && Bouton2.getBackground() == Color.BLACK && Bouton3.getBackground() == Color.BLACK && Bouton4.getBackground() == Color.BLACK && Bouton5.getBackground() == Color.BLACK && Bouton6.getBackground() == Color.BLACK && Bouton7.getBackground() == Color.BLACK && Bouton8.getBackground() == Color.BLACK && Bouton9.getBackground() == Color.BLACK && Bouton10.getBackground() == Color.BLACK && Bouton11.getBackground() == Color.BLACK && Bouton12.getBackground() == Color.BLACK && Bouton13.getBackground() == Color.BLACK && Bouton14.getBackground() == Color.BLACK && Bouton15.getBackground() == Color.BLACK && Bouton16.getBackground() == Color.BLACK && Bouton17.getBackground() == Color.BLACK && Bouton18.getBackground() == Color.BLACK && Bouton19.getBackground() == Color.BLACK && Bouton20.getBackground() == Color.BLACK && Bouton21.getBackground() == Color.BLACK && Bouton22.getBackground() == Color.BLACK &&Bouton23.getBackground() == Color.BLACK && Bouton24.getBackground() == Color.BLACK && Bouton25.getBackground() == Color.BLACK) {
             FenetreVictoire vic = new FenetreVictoire();
             vic.setVisible(true);
             InterfaceGraphique.super.dispose();
@@ -1054,11 +1043,11 @@ public class InterfaceGraphique extends javax.swing.JFrame {
     
     
     public void changerCouleurBouton(JButton btn) {
-        if (btn.getBackground() == Color.DARK_GRAY){
-            btn.setBackground(Color.CYAN);
+        if (btn.getBackground() == Color.BLACK){
+            btn.setBackground(Color.YELLOW);
         }
         else {
-            btn.setBackground(Color.DARK_GRAY);
+            btn.setBackground(Color.BLACK);
         }
     }
     /**
@@ -1131,6 +1120,8 @@ public class InterfaceGraphique extends javax.swing.JFrame {
     private javax.swing.JButton Bouton_lvl5;
     private javax.swing.JLabel Score;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables

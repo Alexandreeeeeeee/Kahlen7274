@@ -10,6 +10,8 @@ import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import javax.swing.JButton;
+import javax.swing.*;
+import java.awt.*;
 
 /**
  *
@@ -23,35 +25,36 @@ public class InterfaceGraphique extends javax.swing.JFrame {
     /**
      * Creates new form InterfaceGraphique
      */
+	
     public InterfaceGraphique() {
         initComponents();
         PlayMusic("NYX.wav");
         JButton[][] lights = new JButton[5][5];
-        Bouton1.setBackground(Color.BLACK);
-        Bouton2.setBackground(Color.BLACK);
-        Bouton3.setBackground(Color.BLACK);
-        Bouton4.setBackground(Color.BLACK);
-        Bouton5.setBackground(Color.BLACK);
-        Bouton6.setBackground(Color.BLACK);
-        Bouton7.setBackground(Color.BLACK);
-        Bouton8.setBackground(Color.BLACK);
-        Bouton9.setBackground(Color.BLACK);
-        Bouton10.setBackground(Color.BLACK);
-        Bouton11.setBackground(Color.BLACK);
-        Bouton12.setBackground(Color.BLACK);
-        Bouton13.setBackground(Color.BLACK);
-        Bouton14.setBackground(Color.BLACK);
-        Bouton15.setBackground(Color.BLACK);
-        Bouton16.setBackground(Color.BLACK);
-        Bouton17.setBackground(Color.BLACK);
-        Bouton18.setBackground(Color.BLACK);
-        Bouton19.setBackground(Color.BLACK);
-        Bouton20.setBackground(Color.BLACK);
-        Bouton21.setBackground(Color.BLACK);
-        Bouton22.setBackground(Color.BLACK);
-        Bouton23.setBackground(Color.BLACK);
-        Bouton24.setBackground(Color.BLACK);
-        Bouton25.setBackground(Color.BLACK);
+        Bouton1.setBackground(Color.GRAY);
+        Bouton2.setBackground(Color.GRAY);
+        Bouton3.setBackground(Color.GRAY);
+        Bouton4.setBackground(Color.GRAY);
+        Bouton5.setBackground(Color.GRAY);
+        Bouton6.setBackground(Color.GRAY);
+        Bouton7.setBackground(Color.GRAY);
+        Bouton8.setBackground(Color.GRAY);
+        Bouton9.setBackground(Color.GRAY);
+        Bouton10.setBackground(Color.GRAY);
+        Bouton11.setBackground(Color.GRAY);
+        Bouton12.setBackground(Color.GRAY);
+        Bouton13.setBackground(Color.GRAY);
+        Bouton14.setBackground(Color.GRAY);
+        Bouton15.setBackground(Color.GRAY);
+        Bouton16.setBackground(Color.GRAY);
+        Bouton17.setBackground(Color.GRAY);
+        Bouton18.setBackground(Color.GRAY);
+        Bouton19.setBackground(Color.GRAY);
+        Bouton20.setBackground(Color.GRAY);
+        Bouton21.setBackground(Color.GRAY);
+        Bouton22.setBackground(Color.GRAY);
+        Bouton23.setBackground(Color.GRAY);
+        Bouton24.setBackground(Color.GRAY);
+        Bouton25.setBackground(Color.GRAY);
        
         
     }
@@ -486,6 +489,7 @@ public class InterfaceGraphique extends javax.swing.JFrame {
         PlayMusic("directory.wav");
         nettoyerBoutons();
         rebootBoutons();
+        Bouton_Solution.setEnabled(false);
         int a = (int)( 1 + Math.random()* 26);
         int b = (int)( 1 + Math.random()* 26);
         int c = (int)( 1 + Math.random()* 26);
@@ -1028,36 +1032,36 @@ public class InterfaceGraphique extends javax.swing.JFrame {
     }
     
     public void rebootBoutons() {
-        Bouton1.setBackground(Color.BLACK);
-        Bouton2.setBackground(Color.BLACK);
-        Bouton3.setBackground(Color.BLACK);
-        Bouton4.setBackground(Color.BLACK);
-        Bouton5.setBackground(Color.BLACK);
-        Bouton6.setBackground(Color.BLACK);
-        Bouton7.setBackground(Color.BLACK);
-        Bouton8.setBackground(Color.BLACK);
-        Bouton9.setBackground(Color.BLACK);
-        Bouton10.setBackground(Color.BLACK);
-        Bouton11.setBackground(Color.BLACK);
-        Bouton12.setBackground(Color.BLACK);
-        Bouton13.setBackground(Color.BLACK);
-        Bouton14.setBackground(Color.BLACK);
-        Bouton15.setBackground(Color.BLACK);
-        Bouton16.setBackground(Color.BLACK);
-        Bouton17.setBackground(Color.BLACK);
-        Bouton18.setBackground(Color.BLACK);
-        Bouton19.setBackground(Color.BLACK);
-        Bouton20.setBackground(Color.BLACK);
-        Bouton21.setBackground(Color.BLACK);
-        Bouton22.setBackground(Color.BLACK);
-        Bouton23.setBackground(Color.BLACK);
-        Bouton24.setBackground(Color.BLACK);
-        Bouton25.setBackground(Color.BLACK);
+        Bouton1.setBackground(Color.GRAY);
+        Bouton2.setBackground(Color.GRAY);
+        Bouton3.setBackground(Color.GRAY);
+        Bouton4.setBackground(Color.GRAY);
+        Bouton5.setBackground(Color.GRAY);
+        Bouton6.setBackground(Color.GRAY);
+        Bouton7.setBackground(Color.GRAY);
+        Bouton8.setBackground(Color.GRAY);
+        Bouton9.setBackground(Color.GRAY);
+        Bouton10.setBackground(Color.GRAY);
+        Bouton11.setBackground(Color.GRAY);
+        Bouton12.setBackground(Color.GRAY);
+        Bouton13.setBackground(Color.GRAY);
+        Bouton14.setBackground(Color.GRAY);
+        Bouton15.setBackground(Color.GRAY);
+        Bouton16.setBackground(Color.GRAY);
+        Bouton17.setBackground(Color.GRAY);
+        Bouton18.setBackground(Color.GRAY);
+        Bouton19.setBackground(Color.GRAY);
+        Bouton20.setBackground(Color.GRAY);
+        Bouton21.setBackground(Color.GRAY);
+        Bouton22.setBackground(Color.GRAY);
+        Bouton23.setBackground(Color.GRAY);
+        Bouton24.setBackground(Color.GRAY);
+        Bouton25.setBackground(Color.GRAY);
     }
     
     
     public void Victoire() {
-        if (Bouton1.getBackground() == Color.BLACK && Bouton2.getBackground() == Color.BLACK && Bouton3.getBackground() == Color.BLACK && Bouton4.getBackground() == Color.BLACK && Bouton5.getBackground() == Color.BLACK && Bouton6.getBackground() == Color.BLACK && Bouton7.getBackground() == Color.BLACK && Bouton8.getBackground() == Color.BLACK && Bouton9.getBackground() == Color.BLACK && Bouton10.getBackground() == Color.BLACK && Bouton11.getBackground() == Color.BLACK && Bouton12.getBackground() == Color.BLACK && Bouton13.getBackground() == Color.BLACK && Bouton14.getBackground() == Color.BLACK && Bouton15.getBackground() == Color.BLACK && Bouton16.getBackground() == Color.BLACK && Bouton17.getBackground() == Color.BLACK && Bouton18.getBackground() == Color.BLACK && Bouton19.getBackground() == Color.BLACK && Bouton20.getBackground() == Color.BLACK && Bouton21.getBackground() == Color.BLACK && Bouton22.getBackground() == Color.BLACK &&Bouton23.getBackground() == Color.BLACK && Bouton24.getBackground() == Color.BLACK && Bouton25.getBackground() == Color.BLACK) {
+        if (Bouton1.getBackground() == Color.GRAY && Bouton2.getBackground() == Color.GRAY && Bouton3.getBackground() == Color.GRAY && Bouton4.getBackground() == Color.GRAY && Bouton5.getBackground() == Color.GRAY && Bouton6.getBackground() == Color.GRAY && Bouton7.getBackground() == Color.GRAY && Bouton8.getBackground() == Color.GRAY && Bouton9.getBackground() == Color.GRAY && Bouton10.getBackground() == Color.GRAY && Bouton11.getBackground() == Color.GRAY && Bouton12.getBackground() == Color.GRAY && Bouton13.getBackground() == Color.GRAY && Bouton14.getBackground() == Color.GRAY && Bouton15.getBackground() == Color.GRAY && Bouton16.getBackground() == Color.GRAY && Bouton17.getBackground() == Color.GRAY && Bouton18.getBackground() == Color.GRAY && Bouton19.getBackground() == Color.GRAY && Bouton20.getBackground() == Color.GRAY && Bouton21.getBackground() == Color.GRAY && Bouton22.getBackground() == Color.GRAY &&Bouton23.getBackground() == Color.GRAY && Bouton24.getBackground() == Color.GRAY && Bouton25.getBackground() == Color.GRAY) {
             FenetreVictoire vic = new FenetreVictoire();
             vic.setVisible(true);
             InterfaceGraphique.super.dispose();
@@ -1066,11 +1070,11 @@ public class InterfaceGraphique extends javax.swing.JFrame {
     
     
     public void changerCouleurBouton(JButton btn) {
-        if (btn.getBackground() == Color.BLACK){
+        if (btn.getBackground() == Color.GRAY){
             btn.setBackground(Color.YELLOW);
         }
         else {
-            btn.setBackground(Color.BLACK);
+            btn.setBackground(Color.GRAY);
         }
     }
     public static void PlayMusic(String location) {
